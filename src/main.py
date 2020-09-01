@@ -22,6 +22,16 @@ from OpencvDemo017 import OpencvDemo017
 from OpencvDemo018 import OpencvDemo018
 from OpencvDemo019 import OpencvDemo019
 from OpencvDemo020 import OpencvDemo020
+from OpencvDemo021 import OpencvDemo021
+from OpencvDemo022 import OpencvDemo022
+# from OpencvDemo023 import OpencvDemo023
+# from OpencvDemo024 import OpencvDemo024
+# from OpencvDemo025 import OpencvDemo025
+# from OpencvDemo026 import OpencvDemo026
+# from OpencvDemo027 import OpencvDemo027
+# from OpencvDemo028 import OpencvDemo028
+# from OpencvDemo029 import OpencvDemo029
+# from OpencvDemo030 import OpencvDemo030
 
 def main(argv):
     argc = len(argv)
@@ -95,6 +105,36 @@ def main(argv):
     elif demoId == 20:
         # 图像直方图反向投影
         ret = OpencvDemo020()
+    elif demoId == 21:
+        # 图像卷积操作
+        ret = OpencvDemo021()
+    elif demoId == 22:
+        # 图像均值与高斯模糊
+        ret = OpencvDemo022()
+#     elif demoId == 23:
+#         #
+#         ret = OpencvDemo023()
+#     elif demoId == 24:
+#         #
+#         ret = OpencvDemo024()
+#     elif demoId == 25:
+#         #
+#         ret = OpencvDemo025()
+#     elif demoId == 26:
+#         #
+#         ret = OpencvDemo026()
+#     elif demoId == 27:
+#         #
+#         ret = OpencvDemo027()
+#     elif demoId == 28:
+#         #
+#         ret = OpencvDemo028()
+#     elif demoId == 29:
+#         #
+#         ret = OpencvDemo029()
+#     elif demoId == 30:
+#         #
+#         ret = OpencvDemo030()
     else:
         print("The argument is invalid!")
         return -1
