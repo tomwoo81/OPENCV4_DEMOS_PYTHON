@@ -24,8 +24,8 @@ from OpencvDemo019 import OpencvDemo019
 from OpencvDemo020 import OpencvDemo020
 from OpencvDemo021 import OpencvDemo021
 from OpencvDemo022 import OpencvDemo022
-# from OpencvDemo023 import OpencvDemo023
-# from OpencvDemo024 import OpencvDemo024
+from OpencvDemo023 import OpencvDemo023
+from OpencvDemo024 import OpencvDemo024
 # from OpencvDemo025 import OpencvDemo025
 # from OpencvDemo026 import OpencvDemo026
 # from OpencvDemo027 import OpencvDemo027
@@ -111,12 +111,12 @@ def main(argv):
     elif demoId == 22:
         # 图像均值与高斯模糊
         ret = OpencvDemo022()
-#     elif demoId == 23:
-#         #
-#         ret = OpencvDemo023()
-#     elif demoId == 24:
-#         #
-#         ret = OpencvDemo024()
+    elif demoId == 23:
+        # 中值模糊
+        ret = OpencvDemo023()
+    elif demoId == 24:
+        # 图像噪声
+        ret = OpencvDemo024()
 #     elif demoId == 25:
 #         #
 #         ret = OpencvDemo025()

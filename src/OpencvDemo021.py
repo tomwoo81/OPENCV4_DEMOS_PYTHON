@@ -16,7 +16,9 @@ def OpencvDemo021():
     cv.namedWindow("input", cv.WINDOW_AUTOSIZE)
     cv.imshow("input", src)
     
-    custom_blur(src)
+    dst = custom_blur(src)
+    cv.imshow("blur", dst)
+    cv.imwrite("output/blur.png", dst)
     
     result = cv.blur(src, (15, 15))
     cv.imshow("result", result)
@@ -50,7 +52,7 @@ def custom_blur(src):
             
             dst[row, col] = [b//9, g//9, r//9]
     
-    cv.imshow("blur", dst)
+    return dst
 
 if __name__ == "__main__":
     OpencvDemo021()
