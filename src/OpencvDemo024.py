@@ -16,7 +16,7 @@ def OpencvDemo024():
     
     result = add_salt_pepper_noise(src)
     cv.imshow("salt-pepper noise", result)
-    result = gaussian_noise(src)
+    result = add_gaussian_noise(src)
     cv.imshow("gaussian noise", result)
     
     cv.waitKey(0)
@@ -46,7 +46,7 @@ def add_salt_pepper_noise(image):
     
     return result
 
-def gaussian_noise(image):
+def add_gaussian_noise(image):
     noise = np.zeros(image.shape, image.dtype)
     
     m = (15, 15, 15)
