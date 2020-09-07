@@ -28,8 +28,8 @@ from OpencvDemo023 import OpencvDemo023
 from OpencvDemo024 import OpencvDemo024
 from OpencvDemo025 import OpencvDemo025
 from OpencvDemo026 import OpencvDemo026
-# from OpencvDemo027 import OpencvDemo027
-# from OpencvDemo028 import OpencvDemo028
+from OpencvDemo027 import OpencvDemo027
+from OpencvDemo028 import OpencvDemo028
 # from OpencvDemo029 import OpencvDemo029
 # from OpencvDemo030 import OpencvDemo030
 
@@ -123,12 +123,12 @@ def main(argv):
     elif demoId == 26:
         # 高斯双边模糊
         ret = OpencvDemo026()
-#     elif demoId == 27:
-#         #
-#         ret = OpencvDemo027()
-#     elif demoId == 28:
-#         #
-#         ret = OpencvDemo028()
+    elif demoId == 27:
+        # 均值迁移模糊
+        ret = OpencvDemo027()
+    elif demoId == 28:
+        # 图像积分图算法
+        ret = OpencvDemo028()
 #     elif demoId == 29:
 #         #
 #         ret = OpencvDemo029()

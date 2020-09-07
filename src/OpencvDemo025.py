@@ -16,19 +16,19 @@ def OpencvDemo025():
     cv.namedWindow("input", cv.WINDOW_AUTOSIZE)
     cv.imshow("input", src)
     
-    src = add_gaussian_noise(src)
-    cv.imshow("gaussian noise", src)
+    dst = add_gaussian_noise(src)
+    cv.imshow("gaussian noise", dst)
     
-    result1 = cv.blur(src, (5, 5))
+    result1 = cv.blur(dst, (5, 5))
     cv.imshow("blur", result1)
     
-    result2 = cv.GaussianBlur(src, (5, 5), 0)
+    result2 = cv.GaussianBlur(dst, (5, 5), 0)
     cv.imshow("gaussian blur", result2)
     
-    result3 = cv.medianBlur(src, 5)
+    result3 = cv.medianBlur(dst, 5)
     cv.imshow("median blur", result3)
     
-    result4 = cv.fastNlMeansDenoisingColored(src, None, 15, 15, 10, 30)
+    result4 = cv.fastNlMeansDenoisingColored(dst, None, 15, 15, 10, 30)
     cv.imshow("non-local means denoising", result4)
     
     cv.waitKey(0)
@@ -37,15 +37,13 @@ def OpencvDemo025():
     
     return cv.Error.StsOk
 
-def add_gaussian_noise(image):
-    noise = np.zeros(image.shape, image.dtype)
+def add_gaussian_noise(src):
+    noise = np.zeros(src.shape, src.dtype)
     
     m = (15, 15, 15)
     s = (30, 30, 30)
     cv.randn(noise, m, s)
-    dst = cv.add(image, noise)
-    
-    cv.imshow("gaussian noise", dst)
+    dst = cv.add(src, noise)
     
     return dst
 

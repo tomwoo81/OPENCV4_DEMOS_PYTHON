@@ -14,9 +14,23 @@ def OpencvDemo024():
         logging.error("could not load an image!")
         return cv.Error.StsError
     
-    result = add_salt_pepper_noise(src)
+    h, w, ch = src.shape
+    result = np.zeros([h, w * 2, ch], dtype=src.dtype)
+    
+    dst = add_salt_pepper_noise(src)
+    
+    result[0 : h, 0 : w, :] = src
+    result[0 : h, w : w * 2, :] = dst
+    cv.putText(result, "original image", (10, 30), cv.FONT_HERSHEY_PLAIN, 2.0, (0, 255, 255), 1)
+    cv.putText(result, "salt-pepper noise image", (w + 10, 30), cv.FONT_HERSHEY_PLAIN, 2.0, (0, 255, 255), 1)
     cv.imshow("salt-pepper noise", result)
-    result = add_gaussian_noise(src)
+    
+    dst = add_gaussian_noise(src)
+    
+    result[0 : h, 0 : w, :] = src
+    result[0 : h, w : w * 2, :] = dst
+    cv.putText(result, "original image", (10, 30), cv.FONT_HERSHEY_PLAIN, 2.0, (0, 255, 255), 1)
+    cv.putText(result, "gaussian noise image", (w + 10, 30), cv.FONT_HERSHEY_PLAIN, 2.0, (0, 255, 255), 1)
     cv.imshow("gaussian noise", result)
     
     cv.waitKey(0)
@@ -25,10 +39,10 @@ def OpencvDemo024():
     
     return cv.Error.StsOk
 
-def add_salt_pepper_noise(image):
-    h, w = image.shape[:2]
+def add_salt_pepper_noise(src):
+    h, w = src.shape[:2]
     nums = 10000
-    dst = np.copy(image)
+    dst = np.copy(src)
     
     rows = np.random.randint(0, h, nums, dtype=np.int)
     cols = np.random.randint(0, w, nums, dtype=np.int)
@@ -38,30 +52,17 @@ def add_salt_pepper_noise(image):
         else:
             dst[rows[i], cols[i]] = (0, 0, 0)
     
-    result = np.zeros([h, w * 2, 3], dtype=image.dtype)
-    result[0 : h, 0 : w, :] = image
-    result[0 : h, w : w * 2, :] = dst
-    cv.putText(result, "original image", (10, 30), cv.FONT_HERSHEY_PLAIN, 2.0, (0, 255, 255), 1)
-    cv.putText(result, "salt-pepper noise image", (w + 10, 30), cv.FONT_HERSHEY_PLAIN, 2.0, (0, 255, 255), 1)
-    
-    return result
+    return dst
 
-def add_gaussian_noise(image):
-    noise = np.zeros(image.shape, image.dtype)
+def add_gaussian_noise(src):
+    noise = np.zeros(src.shape, src.dtype)
     
     m = (15, 15, 15)
     s = (30, 30, 30)
     cv.randn(noise, m, s)
-    dst = cv.add(image, noise)
+    dst = cv.add(src, noise)
     
-    h, w = image.shape[:2]
-    result = np.zeros([h, w * 2, 3], dtype=image.dtype)
-    result[0 : h, 0 : w, :] = image
-    result[0 : h, w : w * 2, :] = dst
-    cv.putText(result, "original image", (10, 30), cv.FONT_HERSHEY_PLAIN, 2.0, (0, 255, 255), 1)
-    cv.putText(result, "gaussian noise image", (w + 10, 30), cv.FONT_HERSHEY_PLAIN, 2.0, (0, 255, 255), 1)
-    
-    return result
+    return dst
 
 if __name__ == "__main__":
     OpencvDemo024()
