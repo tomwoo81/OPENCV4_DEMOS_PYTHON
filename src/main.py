@@ -30,8 +30,8 @@ from OpencvDemo025 import OpencvDemo025
 from OpencvDemo026 import OpencvDemo026
 from OpencvDemo027 import OpencvDemo027
 from OpencvDemo028 import OpencvDemo028
-# from OpencvDemo029 import OpencvDemo029
-# from OpencvDemo030 import OpencvDemo030
+from OpencvDemo029 import OpencvDemo029
+from OpencvDemo030 import OpencvDemo030
 
 def main(argv):
     argc = len(argv)
@@ -129,12 +129,12 @@ def main(argv):
     elif demoId == 28:
         # 图像积分图算法
         ret = OpencvDemo028()
-#     elif demoId == 29:
-#         #
-#         ret = OpencvDemo029()
-#     elif demoId == 30:
-#         #
-#         ret = OpencvDemo030()
+    elif demoId == 29:
+        # 快速的图像边缘滤波算法
+        ret = OpencvDemo029()
+    elif demoId == 30:
+        # OpenCV自定义的滤波器
+        ret = OpencvDemo030()
     else:
         print("The argument is invalid!")
         return -1
