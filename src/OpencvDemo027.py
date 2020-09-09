@@ -16,8 +16,8 @@ def OpencvDemo027():
     
     dst = cv.pyrMeanShiftFiltering(src, 15, 30, termcrit=(cv.TERM_CRITERIA_MAX_ITER+cv.TERM_CRITERIA_EPS, 5, 1))
     
-    h, w = src.shape[:2]
-    result = np.zeros([h, w * 2, 3], dtype=src.dtype)
+    h, w, ch = src.shape
+    result = np.zeros([h, w * 2, ch], dtype=src.dtype)
     result[0 : h, 0 : w, :] = src
     result[0 : h, w : w * 2, :] = dst
     cv.putText(result, "original image", (10, 30), cv.FONT_HERSHEY_PLAIN, 1.5, (0, 255, 255), 1)

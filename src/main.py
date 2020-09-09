@@ -32,6 +32,16 @@ from OpencvDemo027 import OpencvDemo027
 from OpencvDemo028 import OpencvDemo028
 from OpencvDemo029 import OpencvDemo029
 from OpencvDemo030 import OpencvDemo030
+from OpencvDemo031 import OpencvDemo031
+from OpencvDemo032 import OpencvDemo032
+# from OpencvDemo033 import OpencvDemo033
+# from OpencvDemo034 import OpencvDemo034
+# from OpencvDemo035 import OpencvDemo035
+# from OpencvDemo036 import OpencvDemo036
+# from OpencvDemo037 import OpencvDemo037
+# from OpencvDemo038 import OpencvDemo038
+# from OpencvDemo039 import OpencvDemo039
+# from OpencvDemo040 import OpencvDemo040
 
 def main(argv):
     argc = len(argv)
@@ -135,6 +145,36 @@ def main(argv):
     elif demoId == 30:
         # OpenCV自定义的滤波器
         ret = OpencvDemo030()
+    elif demoId == 31:
+        # 图像梯度–Sobel算子
+        ret = OpencvDemo031()
+    elif demoId == 32:
+        # 图像梯度–更多梯度算子
+        ret = OpencvDemo032()
+#     elif demoId == 33:
+#         # 
+#         ret = OpencvDemo033()
+#     elif demoId == 34:
+#         # 
+#         ret = OpencvDemo034()
+#     elif demoId == 35:
+#         # 
+#         ret = OpencvDemo035()
+#     elif demoId == 36:
+#         # 
+#         ret = OpencvDemo036()
+#     elif demoId == 37:
+#         # 
+#         ret = OpencvDemo037()
+#     elif demoId == 38:
+#         # 
+#         ret = OpencvDemo038()
+#     elif demoId == 39:
+#         # 
+#         ret = OpencvDemo039()
+#     elif demoId == 40:
+#         # 
+#         ret = OpencvDemo040()
     else:
         print("The argument is invalid!")
         return -1

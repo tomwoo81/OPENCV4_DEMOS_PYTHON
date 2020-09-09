@@ -16,8 +16,8 @@ def OpencvDemo026():
     
     dst = cv.bilateralFilter(src, 0, 100, 10)
     
-    h, w = src.shape[:2]
-    result = np.zeros([h, w * 2, 3], dtype=src.dtype)
+    h, w, ch = src.shape
+    result = np.zeros([h, w * 2, ch], dtype=src.dtype)
     result[0 : h, 0 : w, :] = src
     result[0 : h, w : w * 2, :] = dst
     cv.putText(result, "original image", (10, 30), cv.FONT_HERSHEY_PLAIN, 2.0, (0, 255, 255), 1)
