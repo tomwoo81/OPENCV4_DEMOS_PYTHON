@@ -34,8 +34,8 @@ from OpencvDemo029 import OpencvDemo029
 from OpencvDemo030 import OpencvDemo030
 from OpencvDemo031 import OpencvDemo031
 from OpencvDemo032 import OpencvDemo032
-# from OpencvDemo033 import OpencvDemo033
-# from OpencvDemo034 import OpencvDemo034
+from OpencvDemo033 import OpencvDemo033
+from OpencvDemo034 import OpencvDemo034
 # from OpencvDemo035 import OpencvDemo035
 # from OpencvDemo036 import OpencvDemo036
 # from OpencvDemo037 import OpencvDemo037
@@ -151,12 +151,12 @@ def main(argv):
     elif demoId == 32:
         # 图像梯度–更多梯度算子
         ret = OpencvDemo032()
-#     elif demoId == 33:
-#         # 
-#         ret = OpencvDemo033()
-#     elif demoId == 34:
-#         # 
-#         ret = OpencvDemo034()
+    elif demoId == 33:
+        # 图像梯度–拉普拉斯算子
+        ret = OpencvDemo033()
+    elif demoId == 34:
+        # 图像锐化
+        ret = OpencvDemo034()
 #     elif demoId == 35:
 #         # 
 #         ret = OpencvDemo035()
