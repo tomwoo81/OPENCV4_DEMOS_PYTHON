@@ -36,8 +36,8 @@ from OpencvDemo031 import OpencvDemo031
 from OpencvDemo032 import OpencvDemo032
 from OpencvDemo033 import OpencvDemo033
 from OpencvDemo034 import OpencvDemo034
-# from OpencvDemo035 import OpencvDemo035
-# from OpencvDemo036 import OpencvDemo036
+from OpencvDemo035 import OpencvDemo035
+from OpencvDemo036 import OpencvDemo036
 # from OpencvDemo037 import OpencvDemo037
 # from OpencvDemo038 import OpencvDemo038
 # from OpencvDemo039 import OpencvDemo039
@@ -157,12 +157,12 @@ def main(argv):
     elif demoId == 34:
         # 图像锐化
         ret = OpencvDemo034()
-#     elif demoId == 35:
-#         # 
-#         ret = OpencvDemo035()
-#     elif demoId == 36:
-#         # 
-#         ret = OpencvDemo036()
+    elif demoId == 35:
+        # USM锐化增强算法
+        ret = OpencvDemo035()
+    elif demoId == 36:
+        # Canny边缘检测器
+        ret = OpencvDemo036()
 #     elif demoId == 37:
 #         # 
 #         ret = OpencvDemo037()
