@@ -38,8 +38,8 @@ from OpencvDemo033 import OpencvDemo033
 from OpencvDemo034 import OpencvDemo034
 from OpencvDemo035 import OpencvDemo035
 from OpencvDemo036 import OpencvDemo036
-# from OpencvDemo037 import OpencvDemo037
-# from OpencvDemo038 import OpencvDemo038
+from OpencvDemo037 import OpencvDemo037
+from OpencvDemo038 import OpencvDemo038
 # from OpencvDemo039 import OpencvDemo039
 # from OpencvDemo040 import OpencvDemo040
 
@@ -163,12 +163,12 @@ def main(argv):
     elif demoId == 36:
         # Canny边缘检测器
         ret = OpencvDemo036()
-#     elif demoId == 37:
-#         # 
-#         ret = OpencvDemo037()
-#     elif demoId == 38:
-#         # 
-#         ret = OpencvDemo038()
+    elif demoId == 37:
+        # 图像金字塔
+        ret = OpencvDemo037()
+    elif demoId == 38:
+        # 拉普拉斯金字塔
+        ret = OpencvDemo038()
 #     elif demoId == 39:
 #         # 
 #         ret = OpencvDemo039()

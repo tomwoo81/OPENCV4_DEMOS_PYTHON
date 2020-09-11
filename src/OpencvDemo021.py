@@ -31,7 +31,7 @@ def OpencvDemo021():
 
 def custom_blur(src):
     h, w, ch = src.shape
-    logging.debug("h: %u, w: %u, ch: %u", h, w, ch)
+    logging.debug("h: {:d}, w: {:d}, ch: {:d}".format(h, w, ch))
     
     dst = np.copy(src)
     for row in range(1, h-1, 1):

@@ -16,7 +16,7 @@ def OpencvDemo014():
     cv.imshow("input", src)
     
     h, w = src.shape[:2]
-    logging.debug("height: %d, width: %d", h, w)
+    logging.debug("height: {:d}, width: {:d}".format(h, w))
     
     dst = cv.resize(src, (w*2, h*2), fx=0.75, fy=0.75, interpolation=cv.INTER_NEAREST)
     cv.imshow("INTER_NEAREST", dst)

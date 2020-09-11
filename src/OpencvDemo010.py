@@ -17,11 +17,11 @@ def OpencvDemo010():
     cv.imshow("input", src)
     
     minVal, maxVal, minLoc, maxLoc = cv.minMaxLoc(src)
-    logging.info("min: %.2f, max: %.2f", minVal, maxVal)
-    logging.info("min loc: %s, max loc: %s", minLoc, maxLoc)
+    logging.info("min: {:.2f}, max: {:.2f}".format(minVal, maxVal))
+    logging.info("min loc: {}, max loc: {}".format(minLoc, maxLoc))
     
     means, stddevs = cv.meanStdDev(src)
-    logging.info("mean: %s, stddev: %s", means, stddevs)
+    logging.info("mean: {}, stddev: {}".format(means, stddevs))
     src[np.where(src <= means)] = 0
     src[np.where(src > means)] = 255
     cv.imshow("binary", src)

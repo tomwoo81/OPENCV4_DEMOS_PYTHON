@@ -35,7 +35,7 @@ def OpencvDemo008():
     cv.imshow("output3", dst3)
     
     dst = np.zeros(src.shape, dtype=np.uint8)
-    logging.debug("src.shape: %s, dst.shape: %s", src.shape, dst.shape)
+    logging.debug("src.shape: {}, dst.shape: {}".format(src.shape, dst.shape))
     cv.mixChannels([src], [dst], fromTo=[2, 0, 1, 1, 0, 2])
     cv.imshow("output4", dst)
     

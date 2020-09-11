@@ -18,7 +18,7 @@ def OpencvDemo005():
     cv.imshow("input2", src2)
     
     h, w, ch = src1.shape
-    logging.debug("h: %u, w: %u, ch: %u", h, w, ch)
+    logging.debug("h: {:d}, w: {:d}, ch: {:d}".format(h, w, ch))
     
     add_result = np.zeros(src1.shape, src1.dtype);
     cv.add(src1, src2, add_result);

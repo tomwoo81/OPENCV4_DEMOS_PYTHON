@@ -19,7 +19,7 @@ def OpencvDemo012():
     height = capture.get(cv.CAP_PROP_FRAME_HEIGHT)
     fps = capture.get(cv.CAP_PROP_FPS)
     count = capture.get(cv.CAP_PROP_FRAME_COUNT)
-    logging.debug("width: %d, height: %d, fps: %d, count: %d", width, height, fps, count)
+    logging.debug("width: {:.0f}, height: {:.0f}, fps: {:.0f}, count: {:.0f}".format(width, height, fps, count))
     writer = cv.VideoWriter("output/bike2.avi", cv.VideoWriter_fourcc('D', 'I', 'V', 'X'), fps,
                          (np.int(width), np.int(height)), True)
     

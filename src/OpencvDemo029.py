@@ -21,7 +21,7 @@ def OpencvDemo029():
     
     end = cv.getTickCount()
     time = (end - start) / (freq / 1000)
-    logging.debug("time consumed: %.3f ms", time)
+    logging.debug("time consumed: {:.3f} ms".format(time))
     
     h, w, ch = src.shape
     result = np.zeros([h, w * 2, ch], dtype=src.dtype)

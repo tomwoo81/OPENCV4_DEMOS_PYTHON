@@ -17,7 +17,7 @@ def OpencvDemo004():
     cv.imshow("input", src)
     
     h, w, ch = src.shape
-    logging.debug("h: %u, w: %u, ch: %u", h, w, ch)
+    logging.debug("h: {:d}, w: {:d}, ch: {:d}".format(h, w, ch))
     for row in range(h):
         for col in range(w):
             b, g, r = src[row, col]

@@ -29,7 +29,7 @@ def OpencvDemo019():
     hist2 = cv.calcHist([hsv2], [0, 1], None, [60, 64], [0, 180, 0, 256])
     hist3 = cv.calcHist([hsv3], [0, 1], None, [60, 64], [0, 180, 0, 256])
     hist4 = cv.calcHist([hsv4], [0, 1], None, [60, 64], [0, 180, 0, 256])
-    logging.debug("hist1.dtype: %s", hist1.dtype)
+    logging.debug("hist1.dtype: {}".format(hist1.dtype))
     
     cv.normalize(hist1, hist1, 0, 1.0, cv.NORM_MINMAX, dtype=cv.CV_32F)
     cv.normalize(hist2, hist2, 0, 1.0, cv.NORM_MINMAX)
@@ -50,7 +50,7 @@ def OpencvDemo019():
             str_method = "Intersection"
         elif method == cv.HISTCMP_BHATTACHARYYA:
             str_method = "Bhattacharyya"
-        logging.info("Method [%s]: src1_src2: %.3f, src3_src4: %.3f", str_method, src1_src2, src3_src4)
+        logging.info("Method [{}]: src1_src2: {:.3f}, src3_src4: {:.3f}".format(str_method, src1_src2, src3_src4))
     
     cv.waitKey(0)
     
