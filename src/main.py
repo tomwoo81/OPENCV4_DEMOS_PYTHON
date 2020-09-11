@@ -40,8 +40,8 @@ from OpencvDemo035 import OpencvDemo035
 from OpencvDemo036 import OpencvDemo036
 from OpencvDemo037 import OpencvDemo037
 from OpencvDemo038 import OpencvDemo038
-# from OpencvDemo039 import OpencvDemo039
-# from OpencvDemo040 import OpencvDemo040
+from OpencvDemo039 import OpencvDemo039
+from OpencvDemo040 import OpencvDemo040
 
 def main(argv):
     argc = len(argv)
@@ -169,12 +169,12 @@ def main(argv):
     elif demoId == 38:
         # 拉普拉斯金字塔
         ret = OpencvDemo038()
-#     elif demoId == 39:
-#         # 
-#         ret = OpencvDemo039()
-#     elif demoId == 40:
-#         # 
-#         ret = OpencvDemo040()
+    elif demoId == 39:
+        # 图像模板匹配
+        ret = OpencvDemo039()
+    elif demoId == 40:
+        # 二值图像介绍
+        ret = OpencvDemo040()
     else:
         print("The argument is invalid!")
         return -1
