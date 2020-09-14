@@ -42,6 +42,16 @@ from OpencvDemo037 import OpencvDemo037
 from OpencvDemo038 import OpencvDemo038
 from OpencvDemo039 import OpencvDemo039
 from OpencvDemo040 import OpencvDemo040
+from OpencvDemo041 import OpencvDemo041
+# from OpencvDemo042 import OpencvDemo042
+# from OpencvDemo043 import OpencvDemo043
+# from OpencvDemo044 import OpencvDemo044
+# from OpencvDemo045 import OpencvDemo045
+# from OpencvDemo046 import OpencvDemo046
+# from OpencvDemo047 import OpencvDemo047
+# from OpencvDemo048 import OpencvDemo048
+# from OpencvDemo049 import OpencvDemo049
+# from OpencvDemo050 import OpencvDemo050
 
 def main(argv):
     argc = len(argv)
@@ -175,6 +185,36 @@ def main(argv):
     elif demoId == 40:
         # 二值图像介绍
         ret = OpencvDemo040()
+    elif demoId == 41:
+        # OpenCV中的基本阈值操作
+        ret = OpencvDemo041()
+#     elif demoId == 42:
+#         # xxxx
+#         ret = OpencvDemo042()
+#     elif demoId == 43:
+#         # xxxx
+#         ret = OpencvDemo043()
+#     elif demoId == 44:
+#         # xxxx
+#         ret = OpencvDemo044()
+#     elif demoId == 45:
+#         # xxxx
+#         ret = OpencvDemo045()
+#     elif demoId == 46:
+#         # xxxx
+#         ret = OpencvDemo046()
+#     elif demoId == 47:
+#         # xxxx
+#         ret = OpencvDemo047()
+#     elif demoId == 48:
+#         # xxxx
+#         ret = OpencvDemo048()
+#     elif demoId == 49:
+#         # xxxx
+#         ret = OpencvDemo049()
+#     elif demoId == 50:
+#         # xxxx
+#         ret = OpencvDemo050()
     else:
         print("The argument is invalid!")
         return -1
