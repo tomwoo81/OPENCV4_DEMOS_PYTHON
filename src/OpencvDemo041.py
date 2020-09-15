@@ -30,14 +30,6 @@ def OpencvDemo041():
         _, dst = cv.threshold(gray, t, 255, i)
         cv.imshow("thresholding - type {:d}".format(i), dst)
     
-    ret, dst = cv.threshold(gray, t, 255, cv.THRESH_OTSU)
-    logging.debug("threshold - otsu: {:.0f}".format(ret))
-    cv.imshow("thresholding - otsu", dst)
-    
-    ret, dst = cv.threshold(gray, t, 255, cv.THRESH_TRIANGLE)
-    logging.debug("threshold - triangle: {:.0f}".format(ret))
-    cv.imshow("thresholding - triangle", dst)
-    
     cv.waitKey(0)
     
     cv.destroyAllWindows()

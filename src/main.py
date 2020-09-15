@@ -43,7 +43,7 @@ from OpencvDemo038 import OpencvDemo038
 from OpencvDemo039 import OpencvDemo039
 from OpencvDemo040 import OpencvDemo040
 from OpencvDemo041 import OpencvDemo041
-# from OpencvDemo042 import OpencvDemo042
+from OpencvDemo042 import OpencvDemo042
 # from OpencvDemo043 import OpencvDemo043
 # from OpencvDemo044 import OpencvDemo044
 # from OpencvDemo045 import OpencvDemo045
@@ -188,9 +188,9 @@ def main(argv):
     elif demoId == 41:
         # OpenCV中的基本阈值操作
         ret = OpencvDemo041()
-#     elif demoId == 42:
-#         # xxxx
-#         ret = OpencvDemo042()
+    elif demoId == 42:
+        # OTSU二值寻找算法
+        ret = OpencvDemo042()
 #     elif demoId == 43:
 #         # xxxx
 #         ret = OpencvDemo043()
