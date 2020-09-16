@@ -44,7 +44,7 @@ from OpencvDemo039 import OpencvDemo039
 from OpencvDemo040 import OpencvDemo040
 from OpencvDemo041 import OpencvDemo041
 from OpencvDemo042 import OpencvDemo042
-# from OpencvDemo043 import OpencvDemo043
+from OpencvDemo043 import OpencvDemo043
 # from OpencvDemo044 import OpencvDemo044
 # from OpencvDemo045 import OpencvDemo045
 # from OpencvDemo046 import OpencvDemo046
@@ -191,9 +191,9 @@ def main(argv):
     elif demoId == 42:
         # OTSU二值寻找算法
         ret = OpencvDemo042()
-#     elif demoId == 43:
-#         # xxxx
-#         ret = OpencvDemo043()
+    elif demoId == 43:
+        # TRIANGLE二值寻找算法
+        ret = OpencvDemo043()
 #     elif demoId == 44:
 #         # xxxx
 #         ret = OpencvDemo044()
