@@ -46,7 +46,7 @@ from OpencvDemo041 import OpencvDemo041
 from OpencvDemo042 import OpencvDemo042
 from OpencvDemo043 import OpencvDemo043
 from OpencvDemo044 import OpencvDemo044
-# from OpencvDemo045 import OpencvDemo045
+from OpencvDemo045 import OpencvDemo045
 # from OpencvDemo046 import OpencvDemo046
 # from OpencvDemo047 import OpencvDemo047
 # from OpencvDemo048 import OpencvDemo048
@@ -197,9 +197,9 @@ def main(argv):
     elif demoId == 44:
         # 自适应阈值算法
         ret = OpencvDemo044()
-#     elif demoId == 45:
-#         # xxxx
-#         ret = OpencvDemo045()
+    elif demoId == 45:
+        # 图像二值化与去噪
+        ret = OpencvDemo045()
 #     elif demoId == 46:
 #         # xxxx
 #         ret = OpencvDemo046()
