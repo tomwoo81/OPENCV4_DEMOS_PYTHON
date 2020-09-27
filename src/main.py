@@ -47,7 +47,7 @@ from OpencvDemo042 import OpencvDemo042
 from OpencvDemo043 import OpencvDemo043
 from OpencvDemo044 import OpencvDemo044
 from OpencvDemo045 import OpencvDemo045
-# from OpencvDemo046 import OpencvDemo046
+from OpencvDemo046 import OpencvDemo046
 # from OpencvDemo047 import OpencvDemo047
 # from OpencvDemo048 import OpencvDemo048
 # from OpencvDemo049 import OpencvDemo049
@@ -200,9 +200,9 @@ def main(argv):
     elif demoId == 45:
         # 图像二值化与去噪
         ret = OpencvDemo045()
-#     elif demoId == 46:
-#         # xxxx
-#         ret = OpencvDemo046()
+    elif demoId == 46:
+        # 二值图像连通组件寻找
+        ret = OpencvDemo046()
 #     elif demoId == 47:
 #         # xxxx
 #         ret = OpencvDemo047()
