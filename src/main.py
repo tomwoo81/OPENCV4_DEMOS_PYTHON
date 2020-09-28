@@ -48,7 +48,7 @@ from OpencvDemo043 import OpencvDemo043
 from OpencvDemo044 import OpencvDemo044
 from OpencvDemo045 import OpencvDemo045
 from OpencvDemo046 import OpencvDemo046
-# from OpencvDemo047 import OpencvDemo047
+from OpencvDemo047 import OpencvDemo047
 # from OpencvDemo048 import OpencvDemo048
 # from OpencvDemo049 import OpencvDemo049
 # from OpencvDemo050 import OpencvDemo050
@@ -203,9 +203,9 @@ def main(argv):
     elif demoId == 46:
         # 二值图像连通组件寻找
         ret = OpencvDemo046()
-#     elif demoId == 47:
-#         # xxxx
-#         ret = OpencvDemo047()
+    elif demoId == 47:
+        # 二值图像连通组件状态统计
+        ret = OpencvDemo047()
 #     elif demoId == 48:
 #         # xxxx
 #         ret = OpencvDemo048()
