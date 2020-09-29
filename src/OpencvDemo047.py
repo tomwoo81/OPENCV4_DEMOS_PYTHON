@@ -36,7 +36,7 @@ def connected_components_with_stats_demo(src):
     _, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)
     
     # extract labels
-    num_labels, labels, stats, centroids = cv.connectedComponentsWithStats(binary, connectivity=8, ltype=cv.CV_32S)
+    num_labels, _, stats, centroids = cv.connectedComponentsWithStats(binary, connectivity=8, ltype=cv.CV_32S)
     logging.info("number of foreground labels: {:d}".format(num_labels - 1))
     
     colors = [0] * num_labels
