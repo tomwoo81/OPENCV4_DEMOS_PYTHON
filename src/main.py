@@ -51,7 +51,7 @@ from OpencvDemo046 import OpencvDemo046
 from OpencvDemo047 import OpencvDemo047
 from OpencvDemo048 import OpencvDemo048
 from OpencvDemo049 import OpencvDemo049
-# from OpencvDemo050 import OpencvDemo050
+from OpencvDemo050 import OpencvDemo050
 
 def main(argv):
     argc = len(argv)
@@ -212,9 +212,9 @@ def main(argv):
     elif demoId == 49:
         # 二值图像分析—轮廓外接矩形
         ret = OpencvDemo049()
-#     elif demoId == 50:
-#         # xxxx
-#         ret = OpencvDemo050()
+    elif demoId == 50:
+        # 二值图像分析—轮廓面积与弧长
+        ret = OpencvDemo050()
     else:
         print("The argument is invalid!")
         return -1
