@@ -50,7 +50,7 @@ from OpencvDemo045 import OpencvDemo045
 from OpencvDemo046 import OpencvDemo046
 from OpencvDemo047 import OpencvDemo047
 from OpencvDemo048 import OpencvDemo048
-# from OpencvDemo049 import OpencvDemo049
+from OpencvDemo049 import OpencvDemo049
 # from OpencvDemo050 import OpencvDemo050
 
 def main(argv):
@@ -209,9 +209,9 @@ def main(argv):
     elif demoId == 48:
         # 二值图像分析—轮廓发现
         ret = OpencvDemo048()
-#     elif demoId == 49:
-#         # xxxx
-#         ret = OpencvDemo049()
+    elif demoId == 49:
+        # 二值图像分析—轮廓外接矩形
+        ret = OpencvDemo049()
 #     elif demoId == 50:
 #         # xxxx
 #         ret = OpencvDemo050()
