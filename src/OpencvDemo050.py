@@ -20,7 +20,7 @@ def OpencvDemo050():
     k = np.ones((3, 3), dtype=np.uint8)
     binary = cv.morphologyEx(binary, cv.MORPH_DILATE, k)
     
-    # 轮廓发现与绘制
+    # 轮廓发现
     contours, _ = cv.findContours(binary, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
     
     dst1 = np.copy(src)
