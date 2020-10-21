@@ -53,7 +53,7 @@ from OpencvDemo048 import OpencvDemo048
 from OpencvDemo049 import OpencvDemo049
 from OpencvDemo050 import OpencvDemo050
 from OpencvDemo051 import OpencvDemo051
-# from OpencvDemo052 import OpencvDemo052
+from OpencvDemo052 import OpencvDemo052
 # from OpencvDemo053 import OpencvDemo053
 # from OpencvDemo054 import OpencvDemo054
 # from OpencvDemo055 import OpencvDemo055
@@ -228,9 +228,9 @@ def main(argv):
     elif demoId == 51:
         # 二值图像分析—使用轮廓逼近
         ret = OpencvDemo051()
-#     elif demoId == 52:
-#         # XXX
-#         ret = OpencvDemo052()
+    elif demoId == 52:
+        # 二值图像分析—用几何矩计算轮廓中心与横纵比过滤
+        ret = OpencvDemo052()
 #     elif demoId == 53:
 #         # XXX
 #         ret = OpencvDemo053()
