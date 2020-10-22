@@ -27,6 +27,7 @@ def OpencvDemo050():
     dst2 = np.copy(src)
     
     for contour in contours:
+        # 面积与弧长过滤
         area = cv.contourArea(contour)
         arcLen = cv.arcLength(contour, True)
         if area < 100 or arcLen < 100:

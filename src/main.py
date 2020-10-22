@@ -54,7 +54,7 @@ from OpencvDemo049 import OpencvDemo049
 from OpencvDemo050 import OpencvDemo050
 from OpencvDemo051 import OpencvDemo051
 from OpencvDemo052 import OpencvDemo052
-# from OpencvDemo053 import OpencvDemo053
+from OpencvDemo053 import OpencvDemo053
 # from OpencvDemo054 import OpencvDemo054
 # from OpencvDemo055 import OpencvDemo055
 # from OpencvDemo056 import OpencvDemo056
@@ -231,9 +231,9 @@ def main(argv):
     elif demoId == 52:
         # 二值图像分析—用几何矩计算轮廓中心与横纵比过滤
         ret = OpencvDemo052()
-#     elif demoId == 53:
-#         # XXX
-#         ret = OpencvDemo053()
+    elif demoId == 53:
+        # 二值图像分析—Hu矩实现轮廓匹配
+        ret = OpencvDemo053()
 #     elif demoId == 54:
 #         # XXX
 #         ret = OpencvDemo054()
