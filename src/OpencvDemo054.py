@@ -30,8 +30,8 @@ def OpencvDemo054():
         (cx, cy), (a, b), angle = cv.fitEllipse(contour)
         
         # 绘制椭圆
-        cv.ellipse(dst, (np.int32(cx), np.int32(cy)),
-                (np.int32(a / 2), np.int32(b / 2)), angle, 0, 360, (0, 0, 255), 2, cv.LINE_8, 0)
+        cv.ellipse(dst, (int(cx), int(cy)),
+                (int(a / 2), int(b / 2)), angle, 0, 360, (0, 0, 255), 2, cv.LINE_8, 0)
     
     h, w, ch = src.shape
     result = np.zeros([h, w * 2, ch], dtype=src.dtype)

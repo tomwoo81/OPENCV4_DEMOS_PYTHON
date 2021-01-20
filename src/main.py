@@ -57,7 +57,7 @@ from OpencvDemo052 import OpencvDemo052
 from OpencvDemo053 import OpencvDemo053
 from OpencvDemo054 import OpencvDemo054
 from OpencvDemo055 import OpencvDemo055
-# from OpencvDemo056 import OpencvDemo056
+from OpencvDemo056 import OpencvDemo056
 # from OpencvDemo057 import OpencvDemo057
 # from OpencvDemo058 import OpencvDemo058
 # from OpencvDemo059 import OpencvDemo059
@@ -240,9 +240,9 @@ def main(argv):
     elif demoId == 55:
         # 二值图像分析—凸包检测
         ret = OpencvDemo055()
-#     elif demoId == 56:
-#         # XXX
-#         ret = OpencvDemo056()
+    elif demoId == 56:
+        # 二值图像分析—直线拟合与极值点寻找
+        ret = OpencvDemo056()
 #     elif demoId == 57:
 #         # XXX
 #         ret = OpencvDemo057()

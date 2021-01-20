@@ -37,13 +37,13 @@ def OpencvDemo051():
         
         # 形状判断
         if numVertices == 3:
-            cv.putText(dst, "triangle", (np.int32(cx), np.int32(cy)), cv.FONT_HERSHEY_SIMPLEX, .7, (255, 0, 0), 2, cv.LINE_8)
+            cv.putText(dst, "triangle", (int(cx), int(cy)), cv.FONT_HERSHEY_SIMPLEX, .7, (255, 0, 0), 2, cv.LINE_8)
         elif numVertices == 4:
-            cv.putText(dst, "rectangle", (np.int32(cx), np.int32(cy)), cv.FONT_HERSHEY_SIMPLEX, .7, (255, 0, 0), 2, cv.LINE_8)
+            cv.putText(dst, "rectangle", (int(cx), int(cy)), cv.FONT_HERSHEY_SIMPLEX, .7, (255, 0, 0), 2, cv.LINE_8)
         elif numVertices == 6:
-            cv.putText(dst, "polygon", (np.int32(cx), np.int32(cy)), cv.FONT_HERSHEY_SIMPLEX, .7, (255, 0, 0), 2, cv.LINE_8)
+            cv.putText(dst, "polygon", (int(cx), int(cy)), cv.FONT_HERSHEY_SIMPLEX, .7, (255, 0, 0), 2, cv.LINE_8)
         elif numVertices > 10:
-            cv.putText(dst, "circle", (np.int32(cx), np.int32(cy)), cv.FONT_HERSHEY_SIMPLEX, .7, (255, 0, 0), 2, cv.LINE_8)
+            cv.putText(dst, "circle", (int(cx), int(cy)), cv.FONT_HERSHEY_SIMPLEX, .7, (255, 0, 0), 2, cv.LINE_8)
     
     h, w, ch = src.shape
     result = np.zeros([h, w * 2, ch], dtype=src.dtype)

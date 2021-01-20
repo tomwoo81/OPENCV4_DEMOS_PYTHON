@@ -47,7 +47,7 @@ def OpencvDemo050():
         # 绘制旋转矩形与中心位置
         cv.drawContours(dst2, [box], 0, (0, 0, 255), 2)
         cx, cy = rotRect[0]
-        cv.circle(dst2, (np.int32(cx), np.int32(cy)), 2, (255, 0, 0), cv.FILLED, cv.LINE_8, 0)
+        cv.circle(dst2, (int(cx), int(cy)), 2, (255, 0, 0), cv.FILLED, cv.LINE_8, 0)
     
     h, w, ch = src.shape
     result = np.zeros([h, w * 3, ch], dtype=src.dtype)

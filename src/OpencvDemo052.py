@@ -49,7 +49,7 @@ def OpencvDemo052():
             cv.drawContours(dst, contours, i, (0, 255, 0), 2, cv.LINE_8)
         
         # 绘制轮廓中心
-        cv.circle(dst, (np.int32(cx), np.int32(cy)), 2, (255, 0, 0), cv.FILLED, cv.LINE_8, 0)
+        cv.circle(dst, (int(cx), int(cy)), 2, (255, 0, 0), cv.FILLED, cv.LINE_8, 0)
     
     h, w, ch = src.shape
     result = np.zeros([h, w * 2, ch], dtype=src.dtype)
