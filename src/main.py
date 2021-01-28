@@ -60,7 +60,7 @@ from OpencvDemo055 import OpencvDemo055
 from OpencvDemo056 import OpencvDemo056
 from OpencvDemo057 import OpencvDemo057
 from OpencvDemo058 import OpencvDemo058
-# from OpencvDemo059 import OpencvDemo059
+from OpencvDemo059 import OpencvDemo059
 # from OpencvDemo060 import OpencvDemo060
 
 def main(argv):
@@ -249,9 +249,9 @@ def main(argv):
     elif demoId == 58:
         # 二值图像分析—寻找最大内接圆
         ret = OpencvDemo058()
-#     elif demoId == 59:
-#         # XXX
-#         ret = OpencvDemo059()
+    elif demoId == 59:
+        # 二值图像分析—霍夫直线检测
+        ret = OpencvDemo059()
 #     elif demoId == 60:
 #         # XXX
 #         ret = OpencvDemo060()
