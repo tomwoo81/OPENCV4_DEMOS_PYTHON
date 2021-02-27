@@ -15,9 +15,9 @@ def OpencvDemo061():
         return cv.Error.StsError
     
     gray = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
-    gray = cv.GaussianBlur(gray, (9, 9), 2, 2)
+    gray = cv.GaussianBlur(gray, (3, 3), 2, 2)
 
-    circles = cv.HoughCircles(gray, cv.HOUGH_GRADIENT, 2, 10, None, 100, 80, 20, 100)
+    circles = cv.HoughCircles(gray, cv.HOUGH_GRADIENT, 2, 20, None, 100, 80, 20, 100)
 
     dst = np.copy(src)
 
