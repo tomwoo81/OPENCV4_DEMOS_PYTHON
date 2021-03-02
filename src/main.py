@@ -63,8 +63,8 @@ from OpencvDemo058 import OpencvDemo058
 from OpencvDemo059 import OpencvDemo059
 from OpencvDemo060 import OpencvDemo060
 from OpencvDemo061 import OpencvDemo061
-# from OpencvDemo062 import OpencvDemo062
-# from OpencvDemo063 import OpencvDemo063
+from OpencvDemo062 import OpencvDemo062
+from OpencvDemo063 import OpencvDemo063
 # from OpencvDemo064 import OpencvDemo064
 # from OpencvDemo065 import OpencvDemo065
 # from OpencvDemo066 import OpencvDemo066
@@ -268,12 +268,12 @@ def main(argv):
     elif demoId == 61:
         # 二值图像分析—霍夫圆检测
         ret = OpencvDemo061()
-    # elif demoId == 62:
-    #     # 
-    #     ret = OpencvDemo062()
-    # elif demoId == 63:
-    #     # 
-    #     ret = OpencvDemo063()
+    elif demoId == 62:
+        # 图像形态学—膨胀与腐蚀
+        ret = OpencvDemo062()
+    elif demoId == 63:
+        # 图像形态学—膨胀与腐蚀二
+        ret = OpencvDemo063()
     # elif demoId == 64:
     #     # 
     #     ret = OpencvDemo064()
