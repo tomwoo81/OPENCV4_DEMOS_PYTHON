@@ -65,8 +65,8 @@ from OpencvDemo060 import OpencvDemo060
 from OpencvDemo061 import OpencvDemo061
 from OpencvDemo062 import OpencvDemo062
 from OpencvDemo063 import OpencvDemo063
-# from OpencvDemo064 import OpencvDemo064
-# from OpencvDemo065 import OpencvDemo065
+from OpencvDemo064 import OpencvDemo064
+from OpencvDemo065 import OpencvDemo065
 # from OpencvDemo066 import OpencvDemo066
 # from OpencvDemo067 import OpencvDemo067
 # from OpencvDemo068 import OpencvDemo068
@@ -274,12 +274,12 @@ def main(argv):
     elif demoId == 63:
         # 图像形态学—膨胀与腐蚀二
         ret = OpencvDemo063()
-    # elif demoId == 64:
-    #     # 
-    #     ret = OpencvDemo064()
-    # elif demoId == 65:
-    #     # 
-    #     ret = OpencvDemo065()
+    elif demoId == 64:
+        # 图像形态学–开操作
+        ret = OpencvDemo064()
+    elif demoId == 65:
+        # 图像形态学—闭操作
+        ret = OpencvDemo065()
     # elif demoId == 66:
     #     # 
     #     ret = OpencvDemo066()
