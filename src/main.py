@@ -67,7 +67,7 @@ from OpencvDemo062 import OpencvDemo062
 from OpencvDemo063 import OpencvDemo063
 from OpencvDemo064 import OpencvDemo064
 from OpencvDemo065 import OpencvDemo065
-# from OpencvDemo066 import OpencvDemo066
+from OpencvDemo066 import OpencvDemo066
 # from OpencvDemo067 import OpencvDemo067
 # from OpencvDemo068 import OpencvDemo068
 # from OpencvDemo069 import OpencvDemo069
@@ -280,9 +280,9 @@ def main(argv):
     elif demoId == 65:
         # 图像形态学—闭操作
         ret = OpencvDemo065()
-    # elif demoId == 66:
-    #     # 
-    #     ret = OpencvDemo066()
+    elif demoId == 66:
+        # 图像形态学—开闭操作时候结构元素应用演示
+        ret = OpencvDemo066()
     # elif demoId == 67:
     #     # 
     #     ret = OpencvDemo067()
