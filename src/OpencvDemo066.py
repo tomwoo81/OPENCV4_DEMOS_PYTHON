@@ -68,7 +68,10 @@ def open_demo():
 
 def close_demo():
     src = cv.imread("images/morph3.png")
-
+    if src is None:
+        logging.error("could not load an image!")
+        return cv.Error.StsError
+    
     # 二值化图像
     gray = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
     _, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)
