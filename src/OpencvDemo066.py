@@ -36,7 +36,7 @@ def open_demo():
     open = cv.morphologyEx(binary, cv.MORPH_OPEN, se)
 
     # 提取轮廓
-    contours, hierarchy = cv.findContours(open, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
+    contours, _ = cv.findContours(open, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
 
     dst = np.copy(src)
 
