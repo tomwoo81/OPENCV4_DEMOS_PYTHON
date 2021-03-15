@@ -72,6 +72,16 @@ from OpencvDemo067 import OpencvDemo067
 from OpencvDemo068 import OpencvDemo068
 from OpencvDemo069 import OpencvDemo069
 from OpencvDemo070 import OpencvDemo070
+from OpencvDemo071 import OpencvDemo071
+# from OpencvDemo072 import OpencvDemo072
+# from OpencvDemo073 import OpencvDemo073
+# from OpencvDemo074 import OpencvDemo074
+# from OpencvDemo075 import OpencvDemo075
+# from OpencvDemo076 import OpencvDemo076
+# from OpencvDemo077 import OpencvDemo077
+# from OpencvDemo078 import OpencvDemo078
+# from OpencvDemo079 import OpencvDemo079
+# from OpencvDemo080 import OpencvDemo080
 
 def main(argv):
     argc = len(argv)
@@ -295,6 +305,36 @@ def main(argv):
     elif demoId == 70:
         # 形态学应用—用基本梯度实现轮廓分析
         ret = OpencvDemo070()
+    elif demoId == 71:
+        # 形态学操作—击中击不中
+        ret = OpencvDemo071()
+    # elif demoId == 72:
+    #     # 
+    #     ret = OpencvDemo072()
+    # elif demoId == 73:
+    #     # 
+    #     ret = OpencvDemo073()
+    # elif demoId == 74:
+    #     # 
+    #     ret = OpencvDemo074()
+    # elif demoId == 75:
+    #     # 
+    #     ret = OpencvDemo075()
+    # elif demoId == 76:
+    #     # 
+    #     ret = OpencvDemo076()
+    # elif demoId == 77:
+    #     # 
+    #     ret = OpencvDemo077()
+    # elif demoId == 78:
+    #     # 
+    #     ret = OpencvDemo078()
+    # elif demoId == 79:
+    #     # 
+    #     ret = OpencvDemo079()
+    # elif demoId == 80:
+    #     # 
+    #     ret = OpencvDemo080()
     else:
         print("The argument is invalid!")
         return -1
