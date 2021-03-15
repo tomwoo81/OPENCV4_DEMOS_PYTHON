@@ -71,7 +71,7 @@ from OpencvDemo066 import OpencvDemo066
 from OpencvDemo067 import OpencvDemo067
 from OpencvDemo068 import OpencvDemo068
 from OpencvDemo069 import OpencvDemo069
-# from OpencvDemo070 import OpencvDemo070
+from OpencvDemo070 import OpencvDemo070
 
 def main(argv):
     argc = len(argv)
@@ -292,9 +292,9 @@ def main(argv):
     elif demoId == 69:
         # 图像形态学—图像梯度
         ret = OpencvDemo069()
-    # elif demoId == 70:
-    #     # 
-    #     ret = OpencvDemo070()
+    elif demoId == 70:
+        # 形态学应用—用基本梯度实现轮廓分析
+        ret = OpencvDemo070()
     else:
         print("The argument is invalid!")
         return -1
