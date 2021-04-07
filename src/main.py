@@ -73,8 +73,8 @@ from OpencvDemo068 import OpencvDemo068
 from OpencvDemo069 import OpencvDemo069
 from OpencvDemo070 import OpencvDemo070
 from OpencvDemo071 import OpencvDemo071
-# from OpencvDemo072 import OpencvDemo072
-# from OpencvDemo073 import OpencvDemo073
+from OpencvDemo072 import OpencvDemo072
+from OpencvDemo073 import OpencvDemo073
 # from OpencvDemo074 import OpencvDemo074
 # from OpencvDemo075 import OpencvDemo075
 # from OpencvDemo076 import OpencvDemo076
@@ -308,12 +308,12 @@ def main(argv):
     elif demoId == 71:
         # 形态学操作—击中击不中
         ret = OpencvDemo071()
-    # elif demoId == 72:
-    #     # 
-    #     ret = OpencvDemo072()
-    # elif demoId == 73:
-    #     # 
-    #     ret = OpencvDemo073()
+    elif demoId == 72:
+        # 二值图像分析—缺陷检测一
+        ret = OpencvDemo072()
+    elif demoId == 73:
+        # 二值图像分析—缺陷检测二
+        ret = OpencvDemo073()
     # elif demoId == 74:
     #     # 
     #     ret = OpencvDemo074()
