@@ -75,7 +75,7 @@ from OpencvDemo070 import OpencvDemo070
 from OpencvDemo071 import OpencvDemo071
 from OpencvDemo072 import OpencvDemo072
 from OpencvDemo073 import OpencvDemo073
-# from OpencvDemo074 import OpencvDemo074
+from OpencvDemo074 import OpencvDemo074
 # from OpencvDemo075 import OpencvDemo075
 # from OpencvDemo076 import OpencvDemo076
 # from OpencvDemo077 import OpencvDemo077
@@ -314,9 +314,9 @@ def main(argv):
     elif demoId == 73:
         # 二值图像分析—缺陷检测二
         ret = OpencvDemo073()
-    # elif demoId == 74:
-    #     # 
-    #     ret = OpencvDemo074()
+    elif demoId == 74:
+        # 二值图像分析—提取最大轮廓与编码关键点
+        ret = OpencvDemo074()
     # elif demoId == 75:
     #     # 
     #     ret = OpencvDemo075()
