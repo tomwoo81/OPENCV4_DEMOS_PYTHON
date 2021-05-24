@@ -29,7 +29,7 @@ def OpencvDemo077():
     index = 0
     result = None
 
-    while(True):
+    while True:
         ret, src = capture.read()
         if not ret:
             break

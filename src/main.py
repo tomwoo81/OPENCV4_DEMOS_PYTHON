@@ -79,7 +79,7 @@ from OpencvDemo074 import OpencvDemo074
 from OpencvDemo075 import OpencvDemo075
 from OpencvDemo076 import OpencvDemo076
 from OpencvDemo077 import OpencvDemo077
-# from OpencvDemo078 import OpencvDemo078
+from OpencvDemo078 import OpencvDemo078
 # from OpencvDemo079 import OpencvDemo079
 # from OpencvDemo080 import OpencvDemo080
 
@@ -326,9 +326,9 @@ def main(argv):
     elif demoId == 77:
         # 视频读写与处理
         ret = OpencvDemo077()
-    # elif demoId == 78:
-    #     # 
-    #     ret = OpencvDemo078()
+    elif demoId == 78:
+        # 识别与跟踪视频中的特定颜色对象
+        ret = OpencvDemo078()
     # elif demoId == 79:
     #     # 
     #     ret = OpencvDemo079()
