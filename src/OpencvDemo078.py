@@ -21,7 +21,8 @@ def OpencvDemo078():
     logging.info("frame width: {:d}, frame height: {:d}, FPS: {:.0f}, number of frames: {:d}"
                     .format(width, height, fps, num_of_frames))
     
-    cv.namedWindow("video processing", cv.WINDOW_AUTOSIZE)
+    winName = "object recognition & tracking in video"
+    cv.namedWindow(winName, cv.WINDOW_AUTOSIZE)
     result = None
     
     while True:
@@ -40,7 +41,7 @@ def OpencvDemo078():
         result[0 : h, w : w * 2, :] = dst
         cv.putText(result, "original frame", (10, 30), cv.FONT_ITALIC, 1.0, (0, 0, 255), 1)
         cv.putText(result, "processed frame", (w + 10, 30), cv.FONT_ITALIC, 1.0, (0, 0, 255), 1)
-        cv.imshow("video processing", result)
+        cv.imshow(winName, result)
 
         if c == 27: # ESC
             break
