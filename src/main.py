@@ -81,7 +81,7 @@ from OpencvDemo076 import OpencvDemo076
 from OpencvDemo077 import OpencvDemo077
 from OpencvDemo078 import OpencvDemo078
 from OpencvDemo079 import OpencvDemo079
-# from OpencvDemo080 import OpencvDemo080
+from OpencvDemo080 import OpencvDemo080
 
 def main(argv):
     argc = len(argv)
@@ -332,9 +332,9 @@ def main(argv):
     elif demoId == 79:
         # 视频分析—背景/前景提取
         ret = OpencvDemo079()
-    # elif demoId == 80:
-    #     # 
-    #     ret = OpencvDemo080()
+    elif demoId == 80:
+        # 视频分析—背景消除与前景ROI提取
+        ret = OpencvDemo080()
     else:
         print("The argument is invalid!")
         return -1

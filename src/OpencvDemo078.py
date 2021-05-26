@@ -57,11 +57,11 @@ def process_frame(src):
 
     hsv = cv.cvtColor(src, cv.COLOR_BGR2HSV)
 
-    # 定义结构元素
-    se = cv.getStructuringElement(cv.MORPH_RECT, (15, 15), (-1, -1))
-
     # 颜色提取 - 红色
     mask = cv.inRange(hsv, (0, 43, 46), (10, 255, 255))
+
+    # 定义结构元素
+    se = cv.getStructuringElement(cv.MORPH_RECT, (15, 15), (-1, -1))
 
     # 开操作
     mask = cv.morphologyEx(mask, cv.MORPH_OPEN, se)
