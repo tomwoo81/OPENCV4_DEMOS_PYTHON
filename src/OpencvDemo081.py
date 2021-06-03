@@ -51,9 +51,9 @@ def process(src):
     for i in range(rsp_norm.shape[0]):
         for j in range(rsp_norm.shape[1]):
             if rsp_norm[i, j] > 80:
-                b = np.random.random_integers(0, 256)
-                g = np.random.random_integers(0, 256)
-                r = np.random.random_integers(0, 256)
+                b = np.random.randint(0, 256)
+                g = np.random.randint(0, 256)
+                r = np.random.randint(0, 256)
                 cv.circle(dst, (j, i), 5, (int(b), int(g), int(r)), 2)
     
     return dst

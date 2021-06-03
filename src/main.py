@@ -84,7 +84,7 @@ from OpencvDemo079 import OpencvDemo079
 from OpencvDemo080 import OpencvDemo080
 from OpencvDemo081 import OpencvDemo081
 from OpencvDemo082 import OpencvDemo082
-# from OpencvDemo083 import OpencvDemo083
+from OpencvDemo083 import OpencvDemo083
 # from OpencvDemo084 import OpencvDemo084
 # from OpencvDemo085 import OpencvDemo085
 # from OpencvDemo086 import OpencvDemo086
@@ -351,9 +351,9 @@ def main(argv):
     elif demoId == 82:
         # 角点检测—Shi-Tomasi角点检测
         ret = OpencvDemo082()
-    # elif demoId == 83:
-    #     # 
-    #     ret = OpencvDemo083()
+    elif demoId == 83:
+        # 角点检测–亚像素级别角点检测
+        ret = OpencvDemo083()
     # elif demoId == 84:
     #     # 
     #     ret = OpencvDemo084()

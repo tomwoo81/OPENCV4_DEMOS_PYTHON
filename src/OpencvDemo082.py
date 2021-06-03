@@ -46,9 +46,9 @@ def process(src):
     # drawing circles around corners
     for c in corners:
         x, y = np.int32(c[0])
-        b = np.random.random_integers(0, 256)
-        g = np.random.random_integers(0, 256)
-        r = np.random.random_integers(0, 256)
+        b = np.random.randint(0, 256)
+        g = np.random.randint(0, 256)
+        r = np.random.randint(0, 256)
         cv.circle(dst, (x, y), 5, (int(b), int(g), int(r)), 2)
     
     return dst
