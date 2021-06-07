@@ -86,8 +86,8 @@ from OpencvDemo081 import OpencvDemo081
 from OpencvDemo082 import OpencvDemo082
 from OpencvDemo083 import OpencvDemo083
 from OpencvDemo084 import OpencvDemo084
-# from OpencvDemo085 import OpencvDemo085
-# from OpencvDemo086 import OpencvDemo086
+from OpencvDemo085 import OpencvDemo085
+from OpencvDemo086 import OpencvDemo086
 # from OpencvDemo087 import OpencvDemo087
 # from OpencvDemo088 import OpencvDemo088
 # from OpencvDemo089 import OpencvDemo089
@@ -355,14 +355,14 @@ def main(argv):
         # 角点检测–亚像素级别角点检测
         ret = OpencvDemo083()
     elif demoId == 84:
-        # 视频分析—移动对象的KLT光流跟踪算法
+        # 视频分析—移动对象的KLT光流跟踪算法之一
         ret = OpencvDemo084()
-    # elif demoId == 85:
-    #     # 
-    #     ret = OpencvDemo085()
-    # elif demoId == 86:
-    #     # 
-    #     ret = OpencvDemo086()
+    elif demoId == 85:
+        # 视频分析-移动对象的KLT光流跟踪算法之二
+        ret = OpencvDemo085()
+    elif demoId == 86:
+        # 视频分析–稠密光流分析
+        ret = OpencvDemo086()
     # elif demoId == 87:
     #     # 
     #     ret = OpencvDemo087()

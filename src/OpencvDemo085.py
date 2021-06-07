@@ -5,8 +5,8 @@ import logging
 import numpy as np
 import cv2 as cv
 
-# 视频分析—移动对象的KLT光流跟踪算法之一
-def OpencvDemo084():
+# 视频分析-移动对象的KLT光流跟踪算法之二
+def OpencvDemo085():
     logging.basicConfig(level=logging.DEBUG)
 
     capture = cv.VideoCapture("videos/vtest.avi")
@@ -20,11 +20,13 @@ def OpencvDemo084():
         return cv.Error.StsError
     
     # detector parameters
-    featuresParams = dict(maxCorners = 100, qualityLevel = 0.01, minDistance = 10, blockSize=3)
+    featuresParams = dict(maxCorners = 5000, qualityLevel = 0.01, minDistance = 10, blockSize=3)
 
     # detecting corners
     old_gray = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
     old_pts = cv.goodFeaturesToTrack(old_gray, **featuresParams)
+    init_pts = old_pts
+    logging.info("number of feature points: {:d}".format(len(init_pts)))
     
     winName = "Lucas-Kanade optical flow tracking"
     cv.namedWindow(winName, cv.WINDOW_AUTOSIZE)
@@ -48,26 +50,46 @@ def OpencvDemo084():
         if len(old_pts) > 0:
             pts, status, _ = cv.calcOpticalFlowPyrLK(old_gray, gray, old_pts, None, **flowParams)
         
-        for i, (old_pt, pt) in enumerate(zip(old_pts, pts)):
-            # judging the status
-            if status[i]:
+        k = 0
+
+        for i, (old_pt, pt, init_pt) in enumerate(zip(old_pts, pts, init_pts)):
+            x0, y0 = old_pt[0]
+            x, y = pt[0]
+
+            # judging the status and the distance
+            dist = abs(x - x0) + abs(y - y0)
+            if status[i] and dist > 2:
+                old_pts[k] = old_pt
+                pts[k] = pt
+                init_pts[k] = init_pt
+                k += 1
+                
                 # drawing circles around feature points and lines on their optical flows
-                x0, y0 = np.int32(old_pt[0])
+                xi, yi = np.int32(init_pt[0])
                 x, y = np.int32(pt[0])
                 b = np.random.randint(0, 256)
                 g = np.random.randint(0, 256)
                 r = np.random.randint(0, 256)
                 cv.circle(dst, (x, y), 3, (int(b), int(g), int(r)), cv.FILLED)
-                cv.line(dst, (x0, y0), (x, y), (int(b), int(g), int(r)), 2)
+                cv.line(dst, (xi, yi), (x, y), (int(b), int(g), int(r)), 2)
         
-        # detecting feature points
-        old_pts = cv.goodFeaturesToTrack(gray, **featuresParams)
+        # reserving the valid feature points
+        old_pts = old_pts[:k]
+        pts = pts[:k]
+        init_pts = init_pts[:k]
 
+        # updating old gray image and old feature points
+        old_gray = gray
+        old_pts = pts
         pts = None
 
-        # updating old gray image
-        old_gray = gray
-
+        if len(init_pts) < 40:
+            # re-detecting feature points
+            feature_pts = cv.goodFeaturesToTrack(gray, **featuresParams)
+            old_pts = np.vstack((old_pts, feature_pts))
+            init_pts = np.vstack((init_pts, feature_pts))
+            logging.info("number of feature points: {:d}".format(len(init_pts)))
+        
         h, w, ch = src.shape
         if result is None:
             result = np.zeros([h, w * 2, ch], dtype=src.dtype)
@@ -87,6 +109,6 @@ def OpencvDemo084():
     return cv.Error.StsOk
 
 if __name__ == "__main__":
-    OpencvDemo084()
+    OpencvDemo085()
 
 # end of file
