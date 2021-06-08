@@ -88,7 +88,7 @@ from OpencvDemo083 import OpencvDemo083
 from OpencvDemo084 import OpencvDemo084
 from OpencvDemo085 import OpencvDemo085
 from OpencvDemo086 import OpencvDemo086
-# from OpencvDemo087 import OpencvDemo087
+from OpencvDemo087 import OpencvDemo087
 # from OpencvDemo088 import OpencvDemo088
 # from OpencvDemo089 import OpencvDemo089
 # from OpencvDemo090 import OpencvDemo090
@@ -363,9 +363,9 @@ def main(argv):
     elif demoId == 86:
         # 视频分析–稠密光流分析
         ret = OpencvDemo086()
-    # elif demoId == 87:
-    #     # 
-    #     ret = OpencvDemo087()
+    elif demoId == 87:
+        # 视频分析—基于帧差法实现移动对象分析
+        ret = OpencvDemo087()
     # elif demoId == 88:
     #     # 
     #     ret = OpencvDemo088()
