@@ -90,7 +90,7 @@ from OpencvDemo085 import OpencvDemo085
 from OpencvDemo086 import OpencvDemo086
 from OpencvDemo087 import OpencvDemo087
 from OpencvDemo088 import OpencvDemo088
-# from OpencvDemo089 import OpencvDemo089
+from OpencvDemo089 import OpencvDemo089
 # from OpencvDemo090 import OpencvDemo090
 
 def main(argv):
@@ -369,9 +369,9 @@ def main(argv):
     elif demoId == 88:
         # 视频分析—基于均值迁移的对象移动分析
         ret = OpencvDemo088()
-    # elif demoId == 89:
-    #     # 
-    #     ret = OpencvDemo089()
+    elif demoId == 89:
+        # 视频分析—基于连续自适应均值迁移的对象移动分析
+        ret = OpencvDemo089()
     # elif demoId == 90:
     #     # 
     #     ret = OpencvDemo090()
