@@ -92,6 +92,16 @@ from OpencvDemo087 import OpencvDemo087
 from OpencvDemo088 import OpencvDemo088
 from OpencvDemo089 import OpencvDemo089
 from OpencvDemo090 import OpencvDemo090
+from OpencvDemo091 import OpencvDemo091
+# from OpencvDemo092 import OpencvDemo092
+# from OpencvDemo093 import OpencvDemo093
+# from OpencvDemo094 import OpencvDemo094
+# from OpencvDemo095 import OpencvDemo095
+# from OpencvDemo096 import OpencvDemo096
+# from OpencvDemo097 import OpencvDemo097
+# from OpencvDemo098 import OpencvDemo098
+# from OpencvDemo099 import OpencvDemo099
+# from OpencvDemo100 import OpencvDemo100
 
 def main(argv):
     argc = len(argv)
@@ -375,6 +385,36 @@ def main(argv):
     elif demoId == 90:
         # 视频分析—对象移动轨迹绘制
         ret = OpencvDemo090()
+    elif demoId == 91:
+        # 对象检测—HAAR级联检测器使用
+        ret = OpencvDemo091()
+    # elif demoId == 92:
+    #     # 
+    #     ret = OpencvDemo092()
+    # elif demoId == 93:
+    #     # 
+    #     ret = OpencvDemo093()
+    # elif demoId == 94:
+    #     # 
+    #     ret = OpencvDemo094()
+    # elif demoId == 95:
+    #     # 
+    #     ret = OpencvDemo095()
+    # elif demoId == 96:
+    #     # 
+    #     ret = OpencvDemo096()
+    # elif demoId == 97:
+    #     # 
+    #     ret = OpencvDemo097()
+    # elif demoId == 98:
+    #     # 
+    #     ret = OpencvDemo098()
+    # elif demoId == 99:
+    #     # 
+    #     ret = OpencvDemo099()
+    # elif demoId == 100:
+    #     # 
+    #     ret = OpencvDemo100()
     else:
         print("The argument is invalid!")
         return -1
