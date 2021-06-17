@@ -93,8 +93,8 @@ from OpencvDemo088 import OpencvDemo088
 from OpencvDemo089 import OpencvDemo089
 from OpencvDemo090 import OpencvDemo090
 from OpencvDemo091 import OpencvDemo091
-# from OpencvDemo092 import OpencvDemo092
-# from OpencvDemo093 import OpencvDemo093
+from OpencvDemo092 import OpencvDemo092
+from OpencvDemo093 import OpencvDemo093
 # from OpencvDemo094 import OpencvDemo094
 # from OpencvDemo095 import OpencvDemo095
 # from OpencvDemo096 import OpencvDemo096
@@ -388,12 +388,12 @@ def main(argv):
     elif demoId == 91:
         # 对象检测—HAAR级联检测器使用
         ret = OpencvDemo091()
-    # elif demoId == 92:
-    #     # 
-    #     ret = OpencvDemo092()
-    # elif demoId == 93:
-    #     # 
-    #     ret = OpencvDemo093()
+    elif demoId == 92:
+        # 对象检测—HAAR特征介绍
+        ret = OpencvDemo092()
+    elif demoId == 93:
+        # 对象检测—LBP特征介绍
+        ret = OpencvDemo093()
     # elif demoId == 94:
     #     # 
     #     ret = OpencvDemo094()
