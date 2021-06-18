@@ -24,9 +24,9 @@ def OpencvDemo094():
     result = np.zeros([h, w * 2, ch], dtype=src.dtype)
     result[0 : h, 0 : w, :] = src
     result[0 : h, w : w * 2, :] = dst
-    cv.putText(result, "original image", (10, 30), cv.FONT_ITALIC, .8, (0, 0, 255), 1)
-    cv.putText(result, "image with results of ORB detection", (w + 10, 30), cv.FONT_ITALIC, .8, (0, 0, 255), 1)
-    cv.imshow("ORB keypoint detection and descriptor extraction", result)
+    cv.putText(result, "original image", (10, 30), cv.FONT_ITALIC, .6, (0, 0, 255), 1)
+    cv.putText(result, "image with results of ORB keypoint detection", (w + 10, 30), cv.FONT_ITALIC, .6, (0, 0, 255), 1)
+    cv.imshow("ORB keypoint detection", result)
 
     cv.waitKey(0)
     

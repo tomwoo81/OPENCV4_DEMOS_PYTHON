@@ -96,7 +96,7 @@ from OpencvDemo091 import OpencvDemo091
 from OpencvDemo092 import OpencvDemo092
 from OpencvDemo093 import OpencvDemo093
 from OpencvDemo094 import OpencvDemo094
-# from OpencvDemo095 import OpencvDemo095
+from OpencvDemo095 import OpencvDemo095
 # from OpencvDemo096 import OpencvDemo096
 # from OpencvDemo097 import OpencvDemo097
 # from OpencvDemo098 import OpencvDemo098
@@ -397,9 +397,9 @@ def main(argv):
     elif demoId == 94:
         # ORB FAST特征关键点检测
         ret = OpencvDemo094()
-    # elif demoId == 95:
-    #     # 
-    #     ret = OpencvDemo095()
+    elif demoId == 95:
+        # BRIEF特征描述子匹配
+        ret = OpencvDemo095()
     # elif demoId == 96:
     #     # 
     #     ret = OpencvDemo096()
