@@ -50,10 +50,10 @@ def OpencvDemo076():
         cv.drawMarker(dst1, (src_pts[i][0], src_pts[i][1]), (0, 0, 255), cv.MARKER_CROSS, 20, 1, cv.LINE_8)
     
     dst_pts = list()
-    dst_pts.append([width,height])
-    dst_pts.append([0, height])
-    dst_pts.append([0, 0])
-    dst_pts.append([width, 0])
+    dst_pts.append((width, height))
+    dst_pts.append((0, height))
+    dst_pts.append((0, 0))
+    dst_pts.append((width, 0))
 
     # 透视变换
     M, _ = cv.findHomography(src_pts, np.array(dst_pts))
