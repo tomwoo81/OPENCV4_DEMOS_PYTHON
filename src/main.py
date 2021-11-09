@@ -97,7 +97,7 @@ from OpencvDemo092 import OpencvDemo092
 from OpencvDemo093 import OpencvDemo093
 from OpencvDemo094 import OpencvDemo094
 from OpencvDemo095 import OpencvDemo095
-# from OpencvDemo096 import OpencvDemo096
+from OpencvDemo096 import OpencvDemo096
 # from OpencvDemo097 import OpencvDemo097
 # from OpencvDemo098 import OpencvDemo098
 # from OpencvDemo099 import OpencvDemo099
@@ -400,9 +400,9 @@ def main(argv):
     elif demoId == 95:
         # BRIEF特征描述子匹配
         ret = OpencvDemo095()
-    # elif demoId == 96:
-    #     # 
-    #     ret = OpencvDemo096()
+    elif demoId == 96:
+        # 描述子匹配
+        ret = OpencvDemo096()
     # elif demoId == 97:
     #     # 
     #     ret = OpencvDemo097()
