@@ -99,7 +99,7 @@ from OpencvDemo094 import OpencvDemo094
 from OpencvDemo095 import OpencvDemo095
 from OpencvDemo096 import OpencvDemo096
 from OpencvDemo097 import OpencvDemo097
-# from OpencvDemo098 import OpencvDemo098
+from OpencvDemo098 import OpencvDemo098
 # from OpencvDemo099 import OpencvDemo099
 # from OpencvDemo100 import OpencvDemo100
 
@@ -406,9 +406,9 @@ def main(argv):
     elif demoId == 97:
         # 基于描述子匹配的已知对象定位
         ret = OpencvDemo097()
-    # elif demoId == 98:
-    #     # 
-    #     ret = OpencvDemo098()
+    elif demoId == 98:
+        # SIFT特征提取—关键点提取
+        ret = OpencvDemo098()
     # elif demoId == 99:
     #     # 
     #     ret = OpencvDemo099()
