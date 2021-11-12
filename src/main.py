@@ -100,7 +100,7 @@ from OpencvDemo095 import OpencvDemo095
 from OpencvDemo096 import OpencvDemo096
 from OpencvDemo097 import OpencvDemo097
 from OpencvDemo098 import OpencvDemo098
-# from OpencvDemo099 import OpencvDemo099
+from OpencvDemo099 import OpencvDemo099
 # from OpencvDemo100 import OpencvDemo100
 
 def main(argv):
@@ -409,9 +409,9 @@ def main(argv):
     elif demoId == 98:
         # SIFT特征提取—关键点提取
         ret = OpencvDemo098()
-    # elif demoId == 99:
-    #     # 
-    #     ret = OpencvDemo099()
+    elif demoId == 99:
+        # SIFT特征提取—描述子生成
+        ret = OpencvDemo099()
     # elif demoId == 100:
     #     # 
     #     ret = OpencvDemo100()

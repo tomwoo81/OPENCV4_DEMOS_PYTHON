@@ -2,7 +2,6 @@
 #coding = utf-8
 
 import logging
-import numpy as np
 import cv2 as cv
 
 # BRIEF特征描述子匹配
