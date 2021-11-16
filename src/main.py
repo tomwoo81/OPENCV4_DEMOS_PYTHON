@@ -101,7 +101,7 @@ from OpencvDemo096 import OpencvDemo096
 from OpencvDemo097 import OpencvDemo097
 from OpencvDemo098 import OpencvDemo098
 from OpencvDemo099 import OpencvDemo099
-# from OpencvDemo100 import OpencvDemo100
+from OpencvDemo100 import OpencvDemo100
 
 def main(argv):
     argc = len(argv)
@@ -412,9 +412,9 @@ def main(argv):
     elif demoId == 99:
         # SIFT特征提取—描述子生成
         ret = OpencvDemo099()
-    # elif demoId == 100:
-    #     # 
-    #     ret = OpencvDemo100()
+    elif demoId == 100:
+        # HOG特征与行人检测
+        ret = OpencvDemo100()
     else:
         print("The argument is invalid!")
         return -1
