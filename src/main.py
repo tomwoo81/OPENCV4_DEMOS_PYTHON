@@ -102,6 +102,16 @@ from OpencvDemo097 import OpencvDemo097
 from OpencvDemo098 import OpencvDemo098
 from OpencvDemo099 import OpencvDemo099
 from OpencvDemo100 import OpencvDemo100
+from OpencvDemo101 import OpencvDemo101
+# from OpencvDemo102 import OpencvDemo102
+# from OpencvDemo103 import OpencvDemo103
+# from OpencvDemo104 import OpencvDemo104
+# from OpencvDemo105 import OpencvDemo105
+# from OpencvDemo106 import OpencvDemo106
+# from OpencvDemo107 import OpencvDemo107
+# from OpencvDemo108 import OpencvDemo108
+# from OpencvDemo109 import OpencvDemo109
+# from OpencvDemo110 import OpencvDemo110
 
 def main(argv):
     argc = len(argv)
@@ -415,6 +425,36 @@ def main(argv):
     elif demoId == 100:
         # HOG特征与行人检测
         ret = OpencvDemo100()
+    elif demoId == 101:
+        # HOG特征描述子—多尺度检测
+        ret = OpencvDemo101()
+    # elif demoId == 102:
+    #     # 
+    #     ret = OpencvDemo102()
+    # elif demoId == 103:
+    #     # 
+    #     ret = OpencvDemo103()
+    # elif demoId == 104:
+    #     # 
+    #     ret = OpencvDemo104()
+    # elif demoId == 105:
+    #     # 
+    #     ret = OpencvDemo105()
+    # elif demoId == 106:
+    #     # 
+    #     ret = OpencvDemo106()
+    # elif demoId == 107:
+    #     # 
+    #     ret = OpencvDemo107()
+    # elif demoId == 108:
+    #     # 
+    #     ret = OpencvDemo108()
+    # elif demoId == 109:
+    #     # 
+    #     ret = OpencvDemo109()
+    # elif demoId == 110:
+    #     # 
+    #     ret = OpencvDemo110()
     else:
         print("The argument is invalid!")
         return -1
