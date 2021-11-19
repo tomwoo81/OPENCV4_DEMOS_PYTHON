@@ -103,7 +103,7 @@ from OpencvDemo098 import OpencvDemo098
 from OpencvDemo099 import OpencvDemo099
 from OpencvDemo100 import OpencvDemo100
 from OpencvDemo101 import OpencvDemo101
-# from OpencvDemo102 import OpencvDemo102
+from OpencvDemo102 import OpencvDemo102
 # from OpencvDemo103 import OpencvDemo103
 # from OpencvDemo104 import OpencvDemo104
 # from OpencvDemo105 import OpencvDemo105
@@ -428,9 +428,9 @@ def main(argv):
     elif demoId == 101:
         # HOG特征描述子—多尺度检测
         ret = OpencvDemo101()
-    # elif demoId == 102:
-    #     # 
-    #     ret = OpencvDemo102()
+    elif demoId == 102:
+        # HOG特征描述子—提取描述子
+        ret = OpencvDemo102()
     # elif demoId == 103:
     #     # 
     #     ret = OpencvDemo103()
