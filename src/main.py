@@ -105,7 +105,7 @@ from OpencvDemo100 import OpencvDemo100
 from OpencvDemo101 import OpencvDemo101
 from OpencvDemo102 import OpencvDemo102
 from OpencvDemo103 import OpencvDemo103
-# from OpencvDemo104 import OpencvDemo104
+from OpencvDemo104 import OpencvDemo104
 # from OpencvDemo105 import OpencvDemo105
 # from OpencvDemo106 import OpencvDemo106
 # from OpencvDemo107 import OpencvDemo107
@@ -434,9 +434,9 @@ def main(argv):
     elif demoId == 103:
         # HOG特征描述子—使用描述子特征生成样本数据
         ret = OpencvDemo103()
-    # elif demoId == 104:
-    #     # 
-    #     ret = OpencvDemo104()
+    elif demoId == 104:
+        # SVM线性分类器
+        ret = OpencvDemo104()
     # elif demoId == 105:
     #     # 
     #     ret = OpencvDemo105()
