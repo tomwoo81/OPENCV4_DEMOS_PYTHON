@@ -108,7 +108,7 @@ from OpencvDemo103 import OpencvDemo103
 from OpencvDemo104 import OpencvDemo104
 from OpencvDemo105 import OpencvDemo105
 from OpencvDemo106 import OpencvDemo106
-# from OpencvDemo107 import OpencvDemo107
+from OpencvDemo107 import OpencvDemo107
 # from OpencvDemo108 import OpencvDemo108
 # from OpencvDemo109 import OpencvDemo109
 # from OpencvDemo110 import OpencvDemo110
@@ -443,9 +443,9 @@ def main(argv):
     elif demoId == 106:
         # AKAZE特征与描述子
         ret = OpencvDemo106()
-    # elif demoId == 107:
-    #     # 
-    #     ret = OpencvDemo107()
+    elif demoId == 107:
+        # BRISK特征提取与描述子匹配
+        ret = OpencvDemo107()
     # elif demoId == 108:
     #     # 
     #     ret = OpencvDemo108()
