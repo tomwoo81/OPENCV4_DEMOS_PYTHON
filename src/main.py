@@ -109,7 +109,7 @@ from OpencvDemo104 import OpencvDemo104
 from OpencvDemo105 import OpencvDemo105
 from OpencvDemo106 import OpencvDemo106
 from OpencvDemo107 import OpencvDemo107
-# from OpencvDemo108 import OpencvDemo108
+from OpencvDemo108 import OpencvDemo108
 # from OpencvDemo109 import OpencvDemo109
 # from OpencvDemo110 import OpencvDemo110
 
@@ -446,9 +446,9 @@ def main(argv):
     elif demoId == 107:
         # BRISK特征提取与描述子匹配
         ret = OpencvDemo107()
-    # elif demoId == 108:
-    #     # 
-    #     ret = OpencvDemo108()
+    elif demoId == 108:
+        # 特征提取之关键点检测—GFTTDetector
+        ret = OpencvDemo108()
     # elif demoId == 109:
     #     # 
     #     ret = OpencvDemo109()
