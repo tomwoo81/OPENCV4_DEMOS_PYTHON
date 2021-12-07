@@ -111,7 +111,7 @@ from OpencvDemo106 import OpencvDemo106
 from OpencvDemo107 import OpencvDemo107
 from OpencvDemo108 import OpencvDemo108
 from OpencvDemo109 import OpencvDemo109
-# from OpencvDemo110 import OpencvDemo110
+from OpencvDemo110 import OpencvDemo110
 
 def main(argv):
     argc = len(argv)
@@ -452,9 +452,9 @@ def main(argv):
     elif demoId == 109:
         # BLOB特征分析—SimpleBlobDetector使用
         ret = OpencvDemo109()
-    # elif demoId == 110:
-    #     # 
-    #     ret = OpencvDemo110()
+    elif demoId == 110:
+        # KMeans数据分类
+        ret = OpencvDemo110()
     else:
         print("The argument is invalid!")
         return -1
