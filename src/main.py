@@ -112,6 +112,16 @@ from OpencvDemo107 import OpencvDemo107
 from OpencvDemo108 import OpencvDemo108
 from OpencvDemo109 import OpencvDemo109
 from OpencvDemo110 import OpencvDemo110
+from OpencvDemo111 import OpencvDemo111
+# from OpencvDemo112 import OpencvDemo112
+# from OpencvDemo113 import OpencvDemo113
+# from OpencvDemo114 import OpencvDemo114
+# from OpencvDemo115 import OpencvDemo115
+# from OpencvDemo116 import OpencvDemo116
+# from OpencvDemo117 import OpencvDemo117
+# from OpencvDemo118 import OpencvDemo118
+# from OpencvDemo119 import OpencvDemo119
+# from OpencvDemo120 import OpencvDemo120
 
 def main(argv):
     argc = len(argv)
@@ -455,6 +465,36 @@ def main(argv):
     elif demoId == 110:
         # KMeans数据分类
         ret = OpencvDemo110()
+    elif demoId == 111:
+        # KMeans图像分割
+        ret = OpencvDemo111()
+    # elif demoId == 112:
+    #     # 
+    #     ret = OpencvDemo112()
+    # elif demoId == 113:
+    #     # 
+    #     ret = OpencvDemo113()
+    # elif demoId == 114:
+    #     # 
+    #     ret = OpencvDemo114()
+    # elif demoId == 115:
+    #     # 
+    #     ret = OpencvDemo115()
+    # elif demoId == 116:
+    #     # 
+    #     ret = OpencvDemo116()
+    # elif demoId == 117:
+    #     # 
+    #     ret = OpencvDemo117()
+    # elif demoId == 118:
+    #     # 
+    #     ret = OpencvDemo118()
+    # elif demoId == 119:
+    #     # 
+    #     ret = OpencvDemo119()
+    # elif demoId == 120:
+    #     # 
+    #     ret = OpencvDemo120()
     else:
         print("The argument is invalid!")
         return -1
