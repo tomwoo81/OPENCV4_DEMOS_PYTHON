@@ -33,8 +33,8 @@ def OpencvDemo111():
     result[0 : h, 0 : w, :] = src
     result[0 : h, w : w * 2, :] = dst
     cv.putText(result, "original image", (10, 30), cv.FONT_ITALIC, .5, (0, 0, 255), 1)
-    cv.putText(result, "image with results of K-means clustering", (w + 10, 30), cv.FONT_ITALIC, .5, (0, 0, 255), 1)
-    cv.imshow("K-means clustering", result)
+    cv.putText(result, "segmented image after K-means clustering", (w + 10, 30), cv.FONT_ITALIC, .5, (0, 0, 255), 1)
+    cv.imshow("K-means clustering - image segmentation", result)
 
     cv.waitKey(0)
     
