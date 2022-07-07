@@ -123,7 +123,7 @@ from OpencvDemo118 import OpencvDemo118
 from OpencvDemo119 import OpencvDemo119
 from OpencvDemo120 import OpencvDemo120
 from OpencvDemo121 import OpencvDemo121
-# from OpencvDemo122 import OpencvDemo122
+from OpencvDemo122 import OpencvDemo122
 # from OpencvDemo123 import OpencvDemo123
 # from OpencvDemo124 import OpencvDemo124
 # from OpencvDemo125 import OpencvDemo125
@@ -518,9 +518,9 @@ def main(argv):
     elif demoId == 121:
         # OpenCV DNN 获取导入模型各层信息
         ret = OpencvDemo121()
-    # elif demoId == 122:
-    #     # OpenCV DNN 实现图像分类
-    #     ret = OpencvDemo122()
+    elif demoId == 122:
+        # OpenCV DNN 实现图像分类
+        ret = OpencvDemo122()
     # elif demoId == 123:
     #     # OpenCV DNN 为模型运行设置目标设备与计算后台
     #     ret = OpencvDemo123()

@@ -11,10 +11,12 @@ protxt = "models/googlenet/bvlc_googlenet.prototxt"
 def OpencvDemo121():
     logging.basicConfig(level=logging.DEBUG)
 
-    # load CNN model
+    # load a DNN model
     net = cv.dnn.readNet(bin_model, protxt)
-
-    logging.info("Successfully loaded a model.")
+    if net is None:
+        logging.error("could not load a DNN model!")
+        return cv.Error.StsError
+    logging.info("Successfully loaded a DNN model.")
 
     # get info of layers
     layer_names = net.getLayerNames()
