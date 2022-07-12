@@ -127,7 +127,7 @@ from OpencvDemo122 import OpencvDemo122
 from OpencvDemo123 import OpencvDemo123
 from OpencvDemo124 import OpencvDemo124
 from OpencvDemo125 import OpencvDemo125
-# from OpencvDemo126 import OpencvDemo126
+from OpencvDemo126 import OpencvDemo126
 # from OpencvDemo127 import OpencvDemo127
 # from OpencvDemo128 import OpencvDemo128
 # from OpencvDemo129 import OpencvDemo129
@@ -530,9 +530,9 @@ def main(argv):
     elif demoId == 125:
         # OpenCV DNN 基于SSD实现实时视频检测
         ret = OpencvDemo125()
-    # elif demoId == 126:
-    #     # OpenCV DNN 基于残差网络的人脸检测
-    #     ret = OpencvDemo126()
+    elif demoId == 126:
+        # OpenCV DNN 基于残差网络的人脸检测
+        ret = OpencvDemo126()
     # elif demoId == 127:
     #     # OpenCV DNN 基于残差网络的视频人脸检测
     #     ret = OpencvDemo127()

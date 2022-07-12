@@ -77,7 +77,7 @@ def OpencvDemo125():
         
         time = net.getPerfProfile()[0] * 1000 / cv.getTickFrequency()
         text = "time: {:.0f} ms".format(time)
-        cv.putText(dst, text, (20, 60), cv.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+        cv.putText(dst, text, (20, 60), cv.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 1)
 
         h, w, ch = src.shape
         if result is None:
