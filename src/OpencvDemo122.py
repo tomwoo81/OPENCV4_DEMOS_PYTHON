@@ -23,6 +23,9 @@ def OpencvDemo122():
     labels = None
     with open(labels_txt, 'rt') as f:
         labels = f.read().rstrip('\n').split('\n')
+    if labels is None or 0 == len(labels):
+        logging.error("could not load labels!")
+        return cv.Error.StsError
     
     # read an image
     src = cv.imread("images/space_shuttle.jpg")
