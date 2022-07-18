@@ -129,7 +129,7 @@ from OpencvDemo124 import OpencvDemo124
 from OpencvDemo125 import OpencvDemo125
 from OpencvDemo126 import OpencvDemo126
 from OpencvDemo127 import OpencvDemo127
-# from OpencvDemo128 import OpencvDemo128
+from OpencvDemo128 import OpencvDemo128
 # from OpencvDemo129 import OpencvDemo129
 # from OpencvDemo130 import OpencvDemo130
 # from OpencvDemo131 import OpencvDemo131
@@ -536,9 +536,9 @@ def main(argv):
     elif demoId == 127:
         # OpenCV DNN 基于残差网络的视频人脸检测
         ret = OpencvDemo127()
-    # elif demoId == 128:
-    #     # OpenCV DNN 直接调用TensorFlow的导出模型
-    #     ret = OpencvDemo128()
+    elif demoId == 128:
+        # OpenCV DNN 直接调用TensorFlow的导出模型
+        ret = OpencvDemo128()
     # elif demoId == 129:
     #     # OpenCV DNN 调用OpenPose模型实现姿态评估
     #     ret = OpencvDemo129()
