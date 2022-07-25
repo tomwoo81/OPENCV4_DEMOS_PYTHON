@@ -131,10 +131,10 @@ from OpencvDemo126 import OpencvDemo126
 from OpencvDemo127 import OpencvDemo127
 from OpencvDemo128 import OpencvDemo128
 from OpencvDemo129 import OpencvDemo129
-# from OpencvDemo130 import OpencvDemo130
-# from OpencvDemo131 import OpencvDemo131
-# from OpencvDemo132 import OpencvDemo132
-# from OpencvDemo133 import OpencvDemo133
+from OpencvDemo130 import OpencvDemo130
+from OpencvDemo131 import OpencvDemo131
+from OpencvDemo132 import OpencvDemo132
+from OpencvDemo133 import OpencvDemo133
 # from OpencvDemo134 import OpencvDemo134
 # from OpencvDemo135 import OpencvDemo135
 # from OpencvDemo136 import OpencvDemo136
@@ -542,18 +542,18 @@ def main(argv):
     elif demoId == 129:
         # OpenCV DNN 调用OpenPose模型实现姿态评估
         ret = OpencvDemo129()
-    # elif demoId == 130:
-    #     # OpenCV DNN 支持YOLO对象检测网络运行
-    #     ret = OpencvDemo130()
-    # elif demoId == 131:
-    #     # OpenCV DNN 支持YOLOv3-tiny版本实时对象检测
-    #     ret = OpencvDemo131()
-    # elif demoId == 132:
-    #     # OpenCV DNN 单张与多张图像的推断
-    #     ret = OpencvDemo132()
-    # elif demoId == 133:
-    #     # OpenCV DNN 图像彩色化模型使用
-    #     ret = OpencvDemo133()
+    elif demoId == 130:
+        # OpenCV DNN 支持YOLO对象检测网络运行
+        ret = OpencvDemo130()
+    elif demoId == 131:
+        # OpenCV DNN 支持YOLOv3-tiny版本实时对象检测
+        ret = OpencvDemo131()
+    elif demoId == 132:
+        # OpenCV DNN 单张与多张图像的推断
+        ret = OpencvDemo132()
+    elif demoId == 133:
+        # OpenCV DNN 图像彩色化模型使用
+        ret = OpencvDemo133()
     # elif demoId == 134:
     #     # OpenCV DNN ENet实现图像分割
     #     ret = OpencvDemo134()

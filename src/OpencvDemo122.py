@@ -41,7 +41,7 @@ def OpencvDemo122():
     net.setInput(input)
     output = net.forward()
 
-    # get a class with a highest score
+    # get the class with the highest score
     output = output.flatten()
     classId = np.argmax(output)
     confidence = output[classId]
