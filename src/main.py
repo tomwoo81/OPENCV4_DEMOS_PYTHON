@@ -136,7 +136,7 @@ from OpencvDemo131 import OpencvDemo131
 from OpencvDemo132 import OpencvDemo132
 from OpencvDemo133 import OpencvDemo133
 from OpencvDemo134 import OpencvDemo134
-# from OpencvDemo135 import OpencvDemo135
+from OpencvDemo135 import OpencvDemo135
 # from OpencvDemo136 import OpencvDemo136
 # from OpencvDemo137 import OpencvDemo137
 # from OpencvDemo138 import OpencvDemo138
@@ -557,9 +557,9 @@ def main(argv):
     elif demoId == 134:
         # OpenCV DNN ENet实现图像分割
         ret = OpencvDemo134()
-    # elif demoId == 135:
-    #     # OpenCV DNN 实时快速的图像风格迁移
-    #     ret = OpencvDemo135()
+    elif demoId == 135:
+        # OpenCV DNN 实时快速的图像风格迁移
+        ret = OpencvDemo135()
     # elif demoId == 136:
     #     # OpenCV DNN 解析网络输出结果
     #     ret = OpencvDemo136()
