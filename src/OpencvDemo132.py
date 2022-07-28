@@ -5,8 +5,8 @@ import logging
 import numpy as np
 import cv2 as cv
 
-bin_model = "models/googlenet/bvlc_googlenet.caffemodel"
-protxt = "models/googlenet/bvlc_googlenet.prototxt"
+model_bin = "models/googlenet/bvlc_googlenet.caffemodel"
+model_txt = "models/googlenet/bvlc_googlenet.prototxt"
 labels_txt = "models/googlenet/classification_classes_ILSVRC2012.txt"
 
 # OpenCV DNN 单张与多张图像的推断
@@ -14,7 +14,7 @@ def OpencvDemo132():
     logging.basicConfig(level=logging.DEBUG)
 
     # load a DNN model
-    net = cv.dnn.readNetFromCaffe(protxt, bin_model)
+    net = cv.dnn.readNetFromCaffe(model_txt, model_bin)
     if net is None:
         logging.error("could not load a DNN model!")
         return cv.Error.StsError

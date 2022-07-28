@@ -60,7 +60,7 @@ def OpencvDemo135():
     cv.putText(result, "feathers", (w * 2 + 10, h + 40), cv.FONT_ITALIC, 1.2, (0, 0, 255), 2)
     cv.putText(result, "candy", (w * 3 + 10, h + 40), cv.FONT_ITALIC, 1.2, (0, 0, 255), 2)
     cv.putText(result, "udnie", (w * 4 + 10, h + 40), cv.FONT_ITALIC, 1.2, (0, 0, 255), 2)
-    windowTitle = "fast style transfer - DCGAN model"
+    windowTitle = "fast style transfer - DCGAN models"
     cv.namedWindow(windowTitle, cv.WINDOW_NORMAL)
     cv.resizeWindow(windowTitle, (w * 5 // 2, h))
     cv.imshow(windowTitle, result)

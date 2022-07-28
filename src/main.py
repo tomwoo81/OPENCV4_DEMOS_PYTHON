@@ -137,7 +137,7 @@ from OpencvDemo132 import OpencvDemo132
 from OpencvDemo133 import OpencvDemo133
 from OpencvDemo134 import OpencvDemo134
 from OpencvDemo135 import OpencvDemo135
-# from OpencvDemo136 import OpencvDemo136
+from OpencvDemo136 import OpencvDemo136
 # from OpencvDemo137 import OpencvDemo137
 # from OpencvDemo138 import OpencvDemo138
 # from OpencvDemo139 import OpencvDemo139
@@ -560,9 +560,9 @@ def main(argv):
     elif demoId == 135:
         # OpenCV DNN 实时快速的图像风格迁移
         ret = OpencvDemo135()
-    # elif demoId == 136:
-    #     # OpenCV DNN 解析网络输出结果
-    #     ret = OpencvDemo136()
+    elif demoId == 136:
+        # OpenCV DNN 解析网络输出结果
+        ret = OpencvDemo136()
     # elif demoId == 137:
     #     # OpenCV DNN 实现性别与年龄预测
     #     ret = OpencvDemo137()
