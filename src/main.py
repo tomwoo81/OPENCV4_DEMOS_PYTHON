@@ -139,7 +139,7 @@ from OpencvDemo134 import OpencvDemo134
 from OpencvDemo135 import OpencvDemo135
 from OpencvDemo136 import OpencvDemo136
 from OpencvDemo137 import OpencvDemo137
-# from OpencvDemo138 import OpencvDemo138
+from OpencvDemo138 import OpencvDemo138
 # from OpencvDemo139 import OpencvDemo139
 # from OpencvDemo140 import OpencvDemo140
 
@@ -566,9 +566,9 @@ def main(argv):
     elif demoId == 137:
         # OpenCV DNN 实现性别与年龄预测
         ret = OpencvDemo137()
-    # elif demoId == 138:
-    #     # OpenCV DNN 使用OpenVINO加速
-    #     ret = OpencvDemo138()
+    elif demoId == 138:
+        # OpenCV DNN 使用OpenVINO加速
+        ret = OpencvDemo138()
     # elif demoId == 139:
     #     # 案例：识别0～9印刷体数字—Part1
     #     ret = OpencvDemo139()

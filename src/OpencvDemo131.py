@@ -80,7 +80,6 @@ def OpencvDemo131():
     indices = cv.dnn.NMSBoxes(boxes, confidences, confidence_threshold, 0.4)
 
     for index in indices:
-        index = index[0]
         box = boxes[index]
         label = labels[classIds[index]]
         confidence = confidences[index]
