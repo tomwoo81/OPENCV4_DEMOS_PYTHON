@@ -140,8 +140,8 @@ from OpencvDemo135 import OpencvDemo135
 from OpencvDemo136 import OpencvDemo136
 from OpencvDemo137 import OpencvDemo137
 from OpencvDemo138 import OpencvDemo138
-# from OpencvDemo139 import OpencvDemo139
-# from OpencvDemo140 import OpencvDemo140
+from OpencvDemo139 import OpencvDemo139
+from OpencvDemo140 import OpencvDemo140
 
 def main(argv):
     argc = len(argv)
@@ -569,12 +569,12 @@ def main(argv):
     elif demoId == 138:
         # OpenCV DNN 使用OpenVINO加速
         ret = OpencvDemo138()
-    # elif demoId == 139:
-    #     # 案例：识别0～9印刷体数字—Part1
-    #     ret = OpencvDemo139()
-    # elif demoId == 140:
-    #     # 案例：识别0～9印刷体数字—Part2
-    #     ret = OpencvDemo140()
+    elif demoId == 139:
+        # 案例：识别0～9印刷体数字—Part 1
+        ret = OpencvDemo139()
+    elif demoId == 140:
+        # 案例：识别0～9印刷体数字—Part 2
+        ret = OpencvDemo140()
     else:
         print("The argument is invalid!")
         return -1
