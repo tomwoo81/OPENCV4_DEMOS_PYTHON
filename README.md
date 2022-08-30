@@ -189,7 +189,7 @@ Python: 3.6以上
 
 ## 7. 范例运行方法
 Python File: src/main.py  
-Parameter: 范例序号（如001、012、138）  
+Argument: 范例序号（如001、012、138）  
 
 ## 8. 许可协议
 本项目采用MIT协议进行许可。  
