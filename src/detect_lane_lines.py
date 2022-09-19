@@ -5,6 +5,7 @@ import logging
 import numpy as np
 import cv2 as cv
 
+# 二值分析: 车道线检测
 class LaneLineDetector:
     def __init__(self):
         self.left_line = {'x1': 0, 'y1': 0, 'x2': 0, 'y2': 0}

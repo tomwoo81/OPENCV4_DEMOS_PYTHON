@@ -71,7 +71,7 @@ def OpencvDemo129():
     cv.putText(result, "image with results (MPI body model)", (w + 10, 30), cv.FONT_ITALIC, 1.2, (0, 0, 255), 2)
     windowTitle = "body pose estimation - OpenPose models"
     cv.namedWindow(windowTitle, cv.WINDOW_NORMAL)
-    cv.resizeWindow(windowTitle, (int(w / 2), int(h / 4)))
+    cv.resizeWindow(windowTitle, (w // 2, h // 4))
     cv.imshow(windowTitle, result)
 
     cv.putText(dst_hand, "image with results (hand model)", (10, 30), cv.FONT_ITALIC, 0.6, (0, 0, 255), 1)
