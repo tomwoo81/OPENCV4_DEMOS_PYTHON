@@ -137,8 +137,8 @@ def detect_lane_lines():
     detector = LaneLineDetector()
 
     result = None
-    winName = "lane line detection"
-    cv.namedWindow(winName, cv.WINDOW_NORMAL)
+    windowTitle = "lane line detection"
+    cv.namedWindow(windowTitle, cv.WINDOW_NORMAL)
 
     while True:
         ret, src = capture.read()
@@ -155,8 +155,8 @@ def detect_lane_lines():
             cv.putText(result, "original image", (10, 30), cv.FONT_ITALIC, 1.0, (0, 0, 255), 2)
             cv.putText(result, "image with contours", (10, h + 30), cv.FONT_ITALIC, 1.0, (0, 0, 255), 2)
             cv.putText(result, "image with results", (10, h * 2 + 30), cv.FONT_ITALIC, 1.0, (0, 0, 255), 2)
-            cv.resizeWindow(winName, (w // 2, h * 3 // 2))
-            cv.imshow(winName, result)
+            cv.resizeWindow(windowTitle, (w // 2, h * 3 // 2))
+            cv.imshow(windowTitle, result)
 
             c = cv.waitKey(1)
 
